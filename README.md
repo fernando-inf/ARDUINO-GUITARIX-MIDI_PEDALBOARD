@@ -1,5 +1,5 @@
 Advertencia: La descripción del proyecto se encuentra en contrucción, pueden faltar detalles que explicar. Igualmente el codigo esta funcionando correctamente con Guitarix.
-# SIMPLE-MIDI-GUITARIX-PEDALBOARD
+# SIMPLE-MIDI-GUITARIX-PEDALBOARD (MIDI Input - MIDI Output)
 <img src="https://raw.githubusercontent.com/fernando-inf/SIMPLE-MIDI-GUITARIX-PEDALBOARD/main/SIMPLE_MIDI_GUITARIX_PEDALBOARD/PedalBoardMIDI-1.png" width="100%"></img> 
 <img src="https://raw.githubusercontent.com/fernando-inf/SIMPLE-MIDI-GUITARIX-PEDALBOARD/main/SIMPLE_MIDI_GUITARIX_PEDALBOARD/PedalBoardMIDI-2.png" width="100%"></img> 
 <img src="https://raw.githubusercontent.com/fernando-inf/SIMPLE-MIDI-GUITARIX-PEDALBOARD/main/SIMPLE_MIDI_GUITARIX_PEDALBOARD/PedalBoardMIDI-SimulIDE.png" width="100%"></img> 
