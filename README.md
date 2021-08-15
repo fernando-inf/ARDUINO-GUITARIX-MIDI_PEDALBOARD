@@ -36,7 +36,11 @@ Este proyecto pretende usar materiales reciclados, quien escribe no responde por
 
 8- Un pulsador de CPU que se usara para el cambio entre MODO BANCO y MODO INDIVIDUAL.
 
-9- Herramientas (caladora de mano o eléctrica, taladro, lijadora, limas, etc.) y mechas para taladro de distintas medidas
+9- 12 Tornillos (con tuercas) de 3 milimetros de diametro por 8mm de largo aprox.: se usaran para ajustar los pedales al perfil de metal, tenian un costo de AR$2 en el primer trimestre del 2021.
+
+10- Herramientas (caladora de mano o eléctrica, taladro, lijadora, limas, etc.) y mechas para taladro de distintas medidas
+
+Otros- Alternativamente puede usar: Conector USB tipo B reciclado de impresora o modem para no conectar directamente Arduino a la PC, Switch (on/off) reciclado de un Hub USB para encender y apagar la pedalera.
 
 # ADVERTENCIAS/ACLARACIONES
 - Por simplicidad en SimulIDE no se usan resistencias para los LEDs, pero usted debería colocarlas para evitar daños en los mismos, tal cual se a descripto en la sección "MATERIALES".
