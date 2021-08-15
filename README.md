@@ -5,7 +5,7 @@ Advertencia: La descripción del proyecto se encuentra en contrucción, pueden f
 <img src="https://raw.githubusercontent.com/fernando-inf/SIMPLE-MIDI-GUITARIX-PEDALBOARD/main/SIMPLE_MIDI_GUITARIX_PEDALBOARD/PedalBoardMIDI-SimulIDE.png" width="100%"></img> 
 
 # FUNCIONAMIENTO
-Descargue la ultima version SimulIDE que incluye soporte para Arduino: https://www.simulide.com/p/downloads.html
+Descargue la ultima versión SimulIDE que incluye soporte para Arduino: https://www.simulide.com/p/downloads.html
 
 Abrir el archivo SIMULIDE-PedalBoardMIDI.simu que se encuentra en la carpeta del proyecto. De no iniciar la simulación haga click derecho sobre la placa Arduino y LOAD FIRMWARE, luego seleccione alguno de los archivos con extensión HEX que estan en la carpeta principal del proyecto.
 
