@@ -10,8 +10,6 @@ Si usa Hairless-Midiserial habilite la linea MIDI.turnThruOff() en la pestaña S
 
  ---------------Diseñado por:
 
----------------Fernando Omar Serrano
-
----------------fernando-inf@hotmail.com
+---------------Fernando Omar Serrano (fernando-inf@hotmail.com)
 
 ---------------2021 @CopyLeft
