@@ -39,9 +39,9 @@ Este proyecto pretende usar materiales reciclados, quien escribe no responde por
 9- Herramientas (caladora de mano o eléctrica, taladro, lijadora, limas, etc.) y mechas para taladro de distintas medidas
 
 # ADVERTENCIAS/ACLARACIONES
--
+- Por simplicidad en SimulIDE no se usan resistencias para los LEDs, pero usted debería colocarlas para evitar daños en los mismos, tal cual se a descripto en la sección "MATERIALES".
 
--
+- Luego de hacer pruebas exhaustivas se puede decir que: Si usted en Guitarix añadió un efecto, luego le asigno un MIDI CC y luego quito este efecto: es recomendable eliminar el MIDI CC asignado en la pestaña Motor-> Controlador MIDI. Así, se determino que se evita un bucle infinito de entradas y salidas de señales MIDI (si usted no elimina el CC asignado, Guitarix continuará enviando la señal MIDI, repetidas veces) ya que el Código de este PedalBoard habilita MIDI THRU para la correcta actualización de los preset con cada cambio de los mismos. Si se envían señales repetidas de un mismo MIDI CC se produce el bucle infinito (ver: https://github.com/brummer10/guitarix/issues/80)
 
 # OTRA INFORMACIÓN
 Abra el archivo SIMPLE_MIDI_GUITARIX_PEDALBOARD.ino con Arduino IDE. En la primer pestaña encontrara los pines asignados a LEDs y Pedales. Todos los Pines y señales MIDI CC son modificables pero, no realice ningún cambio sin antes hacer una copia de los archivos. Puede usar simuladores (SimulIDE) y el Debug de Hairless MIDI to Serial para probar los cambios que realice. 
