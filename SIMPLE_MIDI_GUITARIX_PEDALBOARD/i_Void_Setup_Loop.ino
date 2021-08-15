@@ -3,7 +3,7 @@ void setup()
               {
                 MIDI.begin(MIDI_CHANNEL_OMNI);//MIDI_CHANNEL_OMNI= Lee los mensajes de todos los Canales, si esta vacio solo lee el Canal 1 en MIDI IN.
                 Serial.begin(115200); // Si conecta directo a MIDI sin serial: 31250
-                //MIDI.turnThruOff(); //Evita que la señales que entran vuelvan a salir y luego vuelvan a entrar y salir una y otra vez.
+                //MIDI.turnThruOff(); //Evita que la señales que entran vuelvan a salir.
                 MIDI.setHandleControlChange(MIDI_Input_CC); //Trabaja en la recepciòn de mensajes MIDI ControlChange junto con el Void MIDI_Input
                 MIDI.setHandleProgramChange(MIDI_Input_ProgramChange);//Trabaja en la recepciòn de mensajes MIDI ProgramChange junto con el Void MIDI_Input
                 for (int x = 0; x < 7; x++) //Para 7 Pines Digitales, subir valor si se colocan mas pines en "const int buttonPin[]" lo mismo para los LED "const int LED[]"
