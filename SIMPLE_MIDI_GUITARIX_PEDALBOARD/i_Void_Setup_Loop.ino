@@ -29,8 +29,8 @@ void setup()
 
 void loop() 
               {
-                MIDI.read(); //Lee todo el tiempo los valores MIDI que el Software esta enviando a Arduino- Lee los mensajes de todos los Canales, si quiere leer solo el Canal 1 = MIDI.read(1
-                button1 ();//LLama a la funcionaes Void buttonX para ejecutarse en este Loop- un button por cada pulsador conectado
+                MIDI.read(); //Lee todo el tiempo los valores MIDI que el Software esta enviando a Arduino- Lee los mensajes de todos los Canales, si quiere leer solo el Canal 1 = MIDI.read(1)
+                button1 ();//LLama a la funciones "void buttonX" para ejecutarse en este Loop- un button por cada pulsador conectado
                 button2 ();
                 button3 ();
                 button4 ();
