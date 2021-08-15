@@ -5,10 +5,10 @@
 
 Para ver la simulación del funcionamiento de la pedalera descargue SimulIDE: https://www.simulide.com/p/downloads.html
 
-Luego abrir el archivo SIMULIDE-PedalBoardMIDI.simu, de no iniciar la simulación haga click derecho sobre la placa Arduino y LOAD FIRMWARE, luego seleccione algunoo de los archivos con extensión HEX que estan en la carpeta principal del proyecto.
+Luego abrir el archivo SIMULIDE-PedalBoardMIDI.simu, de no iniciar la simulación haga click derecho sobre la placa Arduino y LOAD FIRMWARE, luego seleccione alguno de los archivos con extensión HEX que estan en la carpeta principal del proyecto.
 
 Este proyecto pretende usar materiales reciclados:
-
+1- Arduino Nano (la conexión a la PC se hace por USB, luego usar ttymidi (en GNU/Linux) para simular un puerto MIDI)
 1- Perfil de Hierro de 40,5 x 9,7 cm
 2- Tuvo PVC 110x2,5 mm (se corta y da la forma del pedal con calor, por ejemplo con una plancha para ropa)
 3- Un retazo de madera para dar la forma interna del pedal (lijando) donde se moldeara el PVC.
