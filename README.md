@@ -20,17 +20,21 @@ Este proyecto pretende usar materiales reciclados:
 
 1- Arduino Nano (la conexión a la PC se hace por USB, luego usar ttymidi (en GNU/Linux) para simular un puerto MIDI)
 
-2- Perfil de Hierro de 40,5 x 9,7 cm
+2- Perfil de Metal de 40,5 x 9,7 cm (Los suelen tirar en la obras de construcción)
 
 3- Tuvo PVC 110x2,5 mm (se corta y da la forma del pedal con calor, por ejemplo con una plancha para ropa)
 
 4- Un retazo de madera para dar la forma interna del pedal (lijando) donde se moldeara el PVC.
 
-5- 10 LEDs. (para los Pedales se usaron LEDs Blancos provenientes de una Luz de Emergencia en desuso, para el resto se usaron LEDs azules de mouse optico y Joystick de PS2)
+5- Chapa fina (puede ser de lata de gaseosa o cerveza, lijar pintura para asegurarse de que condicirá energia) que se pegara por encima del PVC y conducira la señal Digital de los Pines. Esta chapa chocara con el perfil de metal (punto 2) que conducira GND y asi encendera y apagara el Pedal.
 
-6- Resistencias 220ohms (o mayor valor si no tiene disponibles estas), puede colocar o no estas resistencias a los LEDS, entre la salida del PIN digital de Arduino y el LED, en general es recomendable colocarlas pero, si tiene muchos LEDs para reciclar puede probar esto: si los LEDs calientan coloque resistencias, de lo contrario no serían necesarias.
+6- 10 LEDs. (para los Pedales se usaron LEDs Blancos provenientes de una Luz de Emergencia en desuso, para el resto se usaron LEDs azules de mouse optico y Joystick de PS2)
 
-7- Un pulsador de CPU que se usara para el cambio entre MODO BANCO y MODO INDIVIDUAL.
+7- Resistencias 220ohms (o mayor valor si no tiene disponibles estas), puede colocar o no estas resistencias a los LEDS, entre la salida del PIN digital de Arduino y el LED, en general es recomendable colocarlas pero, si tiene muchos LEDs para reciclar puede probar esto: si los LEDs calientan coloque resistencias, de lo contrario no serían necesarias.
+
+8- Un pulsador de CPU que se usara para el cambio entre MODO BANCO y MODO INDIVIDUAL.
+
+9- Herramientas (caladora de mano o electrica, taladro, lijadora, etc.) y mechas para taladro de distintas medidas
 
 # ADVERTENCIAS/ACLARACIONES
 -
