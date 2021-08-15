@@ -51,6 +51,8 @@ Si usa ttymidi en GNU/Linux ejecutelo así (de no funcionar o funcionar mal en p
 
 $ ttymidi -s /dev/ttyUSB0 --baudrate=115200
 
+Recuerde que ttymidi solo se iniciará si conecto previamente Arduino al puerto usb. Asi mismo verifique que previamente no ha quedado abierta otra instancia de ttymidi, de ser así, cierrela en su Gestor/Administrador de tareas.
+
 Si usa Hairless-Midiserial (en formato compilado solo esta disponible para sistemas operativos de 32 bits en GNU/Linux) habilite la linea MIDI.turnThruOff() en la pestaña SETUP;
 
 Diseñado por:
