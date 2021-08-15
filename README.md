@@ -8,10 +8,10 @@ los avances significativos que haga usted en el proyecto.
 Si usa ttymidi en LINUX ejecutelo asi de no funcionar en primera instancia: $ ttymidi -s /dev/ttyUSB0 --baudrate=115200
 Si usa Hairless-Midiserial habilite la linea MIDI.turnThruOff() en la pestaña SETUP;
 
- ---------------Diseñado por:---------------------
+ ---------------Diseñado por:
 
----------------Fernando Omar Serrano-------------
+---------------Fernando Omar Serrano
 
----------------fernando-inf@hotmail.com----------
+---------------fernando-inf@hotmail.com
 
----------------2021 @CopyLeft--------------------
+---------------2021 @CopyLeft
