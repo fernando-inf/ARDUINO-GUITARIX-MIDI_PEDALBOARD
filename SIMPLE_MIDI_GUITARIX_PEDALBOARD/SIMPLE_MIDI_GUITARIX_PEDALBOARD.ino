@@ -1,5 +1,5 @@
 /*
- *MIDI PEDALBOARD DIY FREE.
+ *SIMPLE-MIDI-GUITARIX-PEDALBOARD
 
 ADVERTENCIA: Todos los Pines y señales CC son modificables pero, 
 no realize ningun cambio sin antes hacer una copia de los archivos.
@@ -28,12 +28,12 @@ const int LED[] = {9, 10, 11, 12, 13, A0, A1,A2, A3, A4, A5}; //PIN DIGITAL ENCE
 
 const int Ch = 1; //Canal MIDI
 
-const int ValOn = 127; //MIDI.sendControlChange(cc, valor=ValOn, ch)// Depende el programa se Enciende con 0 o con 127 // BLUE CAT'S AXIOM=0, GUITARIX=127 (GuitarIX puede prender y apagar con 127: hay que seleccionar la opción "on/off states transition toggle"
-const int ValOff = 0; //MIDI.sendControlChange(cc, valor=ValOff, ch)    // Depende el programa se Apaga con 0 o con 127 // BLUE CAT'S AXIOM=0, GUITARIX=127 (GuitarIX puede prender y apagar con 127: hay que seleccionar la opción "on/off states transition toggle"
+const int ValOn = 127; //MIDI.sendControlChange(cc, valor=ValOn, ch)// Depende el programa se Enciende con 0 o con 127 
+const int ValOff = 0; //MIDI.sendControlChange(cc, valor=ValOff, ch)    // Depende el programa se Apaga con 0 o con 127 
 
 int BankMSB_LSB = 0; //Variable Para Cambio de Banco, inicia en Banco = 0 y su valor maximo es BankMax
 const int BankMax = 3; // Valor Maximo del numero de Banco
-int MSB_LSB = 0; // CC0 = MSB (Blue Catś AXIOM o GuitarIX), CC32 = LSB (GUITARIX)
+int MSB_LSB = 0; // CC0 = MSB, CC32 = LSB
 int pc = 128; //Variable para cambio de Programa (Preset) pc=ProgramChange. Valor por defecto = 128 que no pertenece al intervalo MIDI (0 a 127) a los efectos de iniciar parpadeo de los LEDs (VoidBlinkLED) para cambio de programa en el primer inicio, ver Void de D2
 
 int buttonState1 = 0;
