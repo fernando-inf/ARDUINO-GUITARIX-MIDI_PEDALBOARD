@@ -16,7 +16,7 @@ void button3 ()
                                   if      (TgSt[2] == 1){MIDI.sendControlChange(CC[1], ValOn, Ch);   digitalWrite(LED[2], HIGH);TgSt[2] = 0;}
                                   else if (TgSt[2] == 0){MIDI.sendControlChange(CC[1], ValOff, Ch);  digitalWrite(LED[2], LOW); TgSt[2] = 1;}
 
-                                  if      (TgSt[1] == 0){MIDI.sendControlChange(CC[0], ValOff, Ch);  digitalWrite(LED[1], LOW); TgSt[1] = 1;}//Pedal 1 es OverDrive y Pedal 2 es Distorsion, no pueden encenderse los 2, esta linea mantiene encendido uno solo.
+                                  //if      (TgSt[1] == 0){MIDI.sendControlChange(CC[0], ValOff, Ch);  digitalWrite(LED[1], LOW); TgSt[1] = 1;}//Pedal 1 es OverDrive y Pedal 2 es Distorsion, no pueden encenderse los 2, esta linea mantiene encendido uno solo.
                                 }                         
                        }
                 
