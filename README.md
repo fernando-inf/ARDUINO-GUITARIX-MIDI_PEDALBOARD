@@ -14,4 +14,4 @@ Si usa Hairless-Midiserial habilite la linea MIDI.turnThruOff() en la pestaña S
 
 ---------------fernando-inf@hotmail.com----------
 
------------ ---2021 @CopyLeft--------------------
+---------------2021 @CopyLeft--------------------
