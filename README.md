@@ -41,9 +41,13 @@ Este proyecto pretende usar materiales reciclados, quien escribe no responde por
 
 9- 12 Tornillos (con tuercas) de 3 milimetros de diametro por 8mm de largo aprox.: se usaran para ajustar los pedales al perfil de metal, tenian un costo de AR$2 en el primer trimestre del 2021.
 
-10- Herramientas (caladora de mano o eléctrica, taladro, lijadora, limas, etc.) y mechas para taladro de distintas medidas
+10- Herramientas (caladora de mano o eléctrica, taladro, lijadora, limas, etc.), lijas distintos granos y mechas para taladro de distintas medidas.
 
-Otros- Alternativamente puede usar: Conector USB tipo B reciclado de impresora o modem para no conectar directamente Arduino a la PC, Switch (on/off) reciclado de un Hub USB para encender y apagar la pedalera.
+-Otros- Alternativamente puede usar: 
+Conector USB tipo B: reciclado de impresora o modem para no conectar directamente Arduino a la PC. 
+Switch (on/off): reciclado de un Hub USB para encender y apagar la pedalera.
+Porcelana fría: para dar forma al soporte de los LEDs en la parte interior del perfil de chapa galvanizada.
+Gomitas de Jeringa: que servirán para soporte y no desplazamiento del pedal en el suelo.
 <img src="https://raw.githubusercontent.com/fernando-inf/SIMPLE-MIDI-GUITARIX-PEDALBOARD/main/SIMPLE_MIDI_GUITARIX_PEDALBOARD/PedalBoardMIDI-5.png" width="100%"></img> 
 
 # ADVERTENCIAS/ACLARACIONES
