@@ -9,7 +9,7 @@ Descargue SimulIDE: https://www.simulide.com/p/downloads.html
 
 Abrir el archivo SIMULIDE-PedalBoardMIDI.simu que se encuentra en la carpeta del proyecto. De no iniciar la simulación haga click derecho sobre la placa Arduino y LOAD FIRMWARE, luego seleccione alguno de los archivos con extensión HEX que estan en la carpeta principal del proyecto.
 
-La versión simple y económica de este proyecto esta limitada a 4 Bancos, ya que son la cantidad de LEDs disponibles para mostrar el estado de los mismos. Se esta trabajando en otra versión con display de 7 segmentos que incrementara el costo. A futuro se espera diseñar una pedalera mas grande con pantalla LCD GRAFICA. Igualmente en el código se ofrece la posibilidad de usar un LCD 16x2 a quienes tengan un Arduinoo Mega. 
+La versión simple y económica de este proyecto esta limitada a 4 Bancos (con 4 preset cada uno, total: 16 presets), ya que son la cantidad de LEDs disponibles para mostrar el estado de los mismos. Se esta trabajando en otra versión con display de 7 segmentos que incrementara el costo. A futuro se espera diseñar una pedalera mas grande con pantalla LCD GRAFICA. Igualmente en el código se ofrece la posibilidad de usar un LCD 16x2 a quienes tengan un Arduinoo Mega. 
 
 # MEDIDAS
 Entrar a: https://app.sketchup.com
