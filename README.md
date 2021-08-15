@@ -1,3 +1,4 @@
+Advertencia: La descripción del proyecto se encuentra en contrucción, pueden faltar detalles que explicar. Igualmente el codigo esta funcionando correctamente con Guitarix.
 # SIMPLE-MIDI-GUITARIX-PEDALBOARD
 <img src="https://raw.githubusercontent.com/fernando-inf/SIMPLE-MIDI-GUITARIX-PEDALBOARD/main/SIMPLE_MIDI_GUITARIX_PEDALBOARD/PedalBoardMIDI-1.png" width="100%"></img> 
 <img src="https://raw.githubusercontent.com/fernando-inf/SIMPLE-MIDI-GUITARIX-PEDALBOARD/main/SIMPLE_MIDI_GUITARIX_PEDALBOARD/PedalBoardMIDI-2.png" width="100%"></img> 
@@ -14,6 +15,7 @@ Abrir el archivo SKETCHUP-SIMPLE-MIDI-GUITARIX-PEDALBOARD.skp que se encuentra e
 
 # MATERIALES
 Este proyecto pretende usar materiales reciclados:
+
 1- Arduino Nano (la conexión a la PC se hace por USB, luego usar ttymidi (en GNU/Linux) para simular un puerto MIDI)
 
 2- Perfil de Hierro de 40,5 x 9,7 cm
@@ -27,6 +29,11 @@ Este proyecto pretende usar materiales reciclados:
 6- Resistencias 220ohms (o mayor valor si no tiene disponibles estas), puede colocar o no estas resistencias a los LEDS, entre la salida del PIN digital de Arduino y el LED, en general es recomendable colocarlas pero, si tiene muchos LEDs para reciclar puede probar esto: si los LEDs calientan coloque resistencias, de lo contrario no serían necesarias.
 
 7- Un pulsador de CPU que se usara para el cambio entre MODO BANCO y MODO INDIVIDUAL.
+
+# ADVERTENCIAS/ACLARACIONES
+-
+
+-
 
 # OTRA INFORMACIÓN
 Todos los Pines y señales MIDI CC son modificables pero, 
