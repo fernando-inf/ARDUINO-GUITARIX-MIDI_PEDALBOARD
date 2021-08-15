@@ -1,6 +1,6 @@
 # SIMPLE-MIDI-GUITARIX-PEDALBOARD
 
-Todos los Pines y señales CC son modificables pero, 
+Todos los Pines y señales MIDI CC son modificables pero, 
 no realize ningun cambio sin antes hacer una copia de los archivos.
 Puede usar simuladores (SimulIDE) y el Debug de Hairless MIDI to Serial 
 para probar los cambios que realice. Tenga la gentileza de informarme sobre 
