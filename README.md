@@ -44,6 +44,7 @@ Este proyecto pretende usar materiales reciclados, quien escribe no responde por
 10- Herramientas (caladora de mano o eléctrica, taladro, lijadora, limas, etc.) y mechas para taladro de distintas medidas
 
 Otros- Alternativamente puede usar: Conector USB tipo B reciclado de impresora o modem para no conectar directamente Arduino a la PC, Switch (on/off) reciclado de un Hub USB para encender y apagar la pedalera.
+<img src="https://raw.githubusercontent.com/fernando-inf/SIMPLE-MIDI-GUITARIX-PEDALBOARD/main/SIMPLE_MIDI_GUITARIX_PEDALBOARD/PedalBoardMIDI-5.png" width="100%"></img> 
 
 # ADVERTENCIAS/ACLARACIONES
 - Por simplicidad en SimulIDE no se usan resistencias para los LEDs, pero usted debería colocarlas para evitar daños en los mismos, tal cual se a descripto en la sección "MATERIALES".
