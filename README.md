@@ -1,4 +1,4 @@
-Advertencia: La descripción del proyecto se encuentra en construcción, pueden faltar detalles que explicar y errores de ortografía. Igualmente el código esta funcionando correctamente con Guitarix.
+# FREE SOFTWARE - FREE WORLD - Try GNU / Linux is FREE.
 
 # SIMPLE-MIDI-GUITARIX-PEDALBOARD (MIDI Input - MIDI Output)
 <img src="https://raw.githubusercontent.com/fernando-inf/SIMPLE-MIDI-GUITARIX-PEDALBOARD/main/SIMPLE_MIDI_GUITARIX_PEDALBOARD/PedalBoardMIDI-1.png" width="100%"></img> 
