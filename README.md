@@ -74,6 +74,6 @@ Si usa Hairless-Midiserial (en formato compilado solo esta disponible para siste
 
 
 
-fernando-inf@hotmail.com)
+fernando-inf@hotmail.com
 
 2021 @CopyLeft
