@@ -2,7 +2,7 @@
 //No debe colocarse "LCD()" en "void loop", si se coloca aqui se imprimen los datos en el LCD en forma intermitente y no es lo correcto.
 //"LCD ()" se incerta en cada Void de pulsador para que los cambios en el LCD solo se produzcan al pulsar el mismo.
 
-#include <LiquidCrystal.h> //LCD 16x2- SOLO ARDUINO MEGA
+#include <LiquidCrystal.h> //https://www.arduino.cc/en/Reference/LiquidCrystal - LCD 16x2- SOLO ARDUINO MEGA
 LiquidCrystal lcd(31, 33, 35, 37, 39, 41);//Pines de conexion al LCD- SOLO ARDUINO MEGA
 
 void LCD()
