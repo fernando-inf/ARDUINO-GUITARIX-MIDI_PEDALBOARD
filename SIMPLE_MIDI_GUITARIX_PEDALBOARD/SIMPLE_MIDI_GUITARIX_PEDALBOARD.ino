@@ -15,8 +15,8 @@ Si usa Hairless-Midiserial habilite la linea MIDI.turnThruOff() en la pestaña S
 ------------------2021 @CopyLeft--------------------
 */
 
-#include <MIDI.h>
-#include <Bounce.h>   //https://github.com/mpflaga/Arduino-Bounce
+#include <MIDI.h>//https://github.com/FortySevenEffects/arduino_midi_library
+#include <Bounce.h>//https://github.com/mpflaga/Arduino-Bounce
 
 MIDI_CREATE_DEFAULT_INSTANCE();                    
                       
