@@ -25,7 +25,7 @@ Abrir el archivo SKETCHUP-SIMPLE-MIDI-GUITARIX-PEDALBOARD.skp que se encuentra e
 # MATERIALES
 Este proyecto pretende usar materiales reciclados, quien escribe no responde por lo daños económicos que puedan causar los detalles descriptos en este apartado:
 
-1- Arduino Nano: la conexión a la PC se hace por USB, luego usar ttymidi (en GNU/Linux https://github.com/moddevices/mod-ttymidi es fácil de compilar) para simular un puerto MIDI (o Hairless MIDI to Serial).
+1- Arduino Nano u otra placa programable con Arduino IDE y con disponibilidad de 17 pines digitales: la conexión a la PC se hace por USB, luego usar ttymidi (en GNU/Linux https://github.com/moddevices/mod-ttymidi es fácil de compilar) para simular un puerto MIDI (o Hairless MIDI to Serial).
 
 2- Perfil de Chapa Galvanizada de 40,5 x 9,7 cm (Los suelen tirar en la obras de construcción): Si se lija se puede lograr hasta un brillo espejo, pero suele oxidarse facilmente y requiere de constante mantenimiento.
 
