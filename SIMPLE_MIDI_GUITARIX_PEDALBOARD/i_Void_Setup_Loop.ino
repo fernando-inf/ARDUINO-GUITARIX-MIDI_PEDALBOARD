@@ -38,5 +38,4 @@ void loop()
                 button6 ();
                 button7 ();
                 BlinkLED();
-                //PoteButton(); //Futura Expansión
               }
