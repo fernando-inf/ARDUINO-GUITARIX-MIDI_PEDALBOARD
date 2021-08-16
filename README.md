@@ -74,7 +74,7 @@ Tenga la gentileza de informarme sobre los avances significativos que haga usted
 
 Si usa ttymidi en GNU/Linux ejecutelo así (de no funcionar o funcionar mal en primera instancia):
 
-$ ttymidi -s /dev/ttyUSB0 --baudrate=115200
+`$ ttymidi -s /dev/ttyUSB0 --baudrate=115200`
 
 Recuerde que ttymidi solo se iniciará si conecto previamente Arduino al puerto usb. Asi mismo verifique que previamente no ha quedado abierta otra instancia de ttymidi, de ser así, cierrela en su Gestor/Administrador de tareas.
 
