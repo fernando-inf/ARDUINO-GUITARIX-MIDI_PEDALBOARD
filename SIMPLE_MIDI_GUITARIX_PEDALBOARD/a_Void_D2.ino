@@ -13,7 +13,7 @@ void button1 ()
                           //Cambia el estado de TgStB (TgSt solo para MODO Banco), su objetivo es encender o apagar los LED cuando se pasa del MODO BANCO al MODO INDIVIDUAL, mostrando asi el estado de los pedales en el MODO INDIVIDUAL provocado cuando se estaba en el MODO BANCO, para esto se usa otros TgSt denominados "TgStB"
                           for (int i = 0; i <=5; i++){if (TgStB[i] == 0) {digitalWrite(LED[i+1], HIGH);TgSt[i+1] = 0;} else {digitalWrite(LED[i+1], LOW);TgSt[i+1] = 1;}}
 
-                          //for (int i = 0; i <=5; i++){MIDI.sendControlChange(CC[i], ValOff, Ch);  digitalWrite(LED[i+1], LOW); TgSt[i+1] = 1;} //Habilite esta Linea si no usa MIDIInput/ Apaga todos los pedales al pasar al MODO INDIVIDUAL, esto evita confuciones al pasar de un banco a otro y volver al MODO INDIVIDUAL, indicando al usuario en forma directa que todos los pedales estan apagados. Asi queda en evidencia que el MODO BANCO y el INDIVIDUAL solo son totalmente compatibles/viables si se tiene MIDIInput y Output juntos.
+/*PEDAL sin MIDIInput*/ //for (int i = 0; i <=5; i++){MIDI.sendControlChange(CC[i], ValOff, Ch);  digitalWrite(LED[i+1], LOW); TgSt[i+1] = 1;} //Habilite esta Linea si no usa MIDIInput/ Apaga todos los pedales al pasar al MODO INDIVIDUAL, esto evita confuciones al pasar de un banco a otro y volver al MODO INDIVIDUAL, indicando al usuario en forma directa que todos los pedales estan apagados. Asi queda en evidencia que el MODO BANCO y el INDIVIDUAL solo son totalmente compatibles/viables si se tiene MIDIInput y Output juntos.
                       }
           
         
