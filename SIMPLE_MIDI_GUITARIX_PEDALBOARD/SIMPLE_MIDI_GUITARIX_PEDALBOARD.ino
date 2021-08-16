@@ -11,8 +11,6 @@ Si usa ttymidi en LINUX ejecutelo asi de no funcionar en primera instancia: ttym
 
 Si usa Hairless-Midiserial habilite la linea MIDI.turnThruOff() en la pestaña SETUP;
 
- ------------------Diseñado por:--------------------
----------------Fernando Omar Serrano----------------
 --------------fernando-inf@hotmail.com--------------
 ------------------2021 @CopyLeft--------------------
 */
