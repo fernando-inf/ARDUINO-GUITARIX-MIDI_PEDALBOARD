@@ -1,6 +1,5 @@
 //-----------------PIN D5----------------------------
-#define buttonPin5_pedal_3 5 //D5
- Bounce buttonPin5_pedal3 =  Bounce(buttonPin5_pedal_3, 140);
+Bounce2::Button buttonPin5_pedal3 = Bounce2::Button();
 
 void button4 () 
                 {

@@ -1,10 +1,6 @@
 //-----------------PIN D4----------------------------
-#define buttonPin4 4  //digital pin D4 arduino(bank +)
- Bounce buttonPin4_upBank =  Bounce(buttonPin4, 100); //Bounce myButton = Bounce(pin, milliseconds); - Crea un objeto Bounce llamado myButton, usando "pin" y esperando que el rebote termine en "milisegundos".
-
-#define buttonPin4_pedal_2 4
- Bounce buttonPin4_pedal2 =  Bounce(buttonPin4_pedal_2, 140);
-
+Bounce2::Button buttonPin4_pedal2 = Bounce2::Button();
+Bounce2::Button buttonPin4_upBank = Bounce2::Button();
 void button3 () 
                 {
                   //FUNCION PEDALES INDIVIDUALES

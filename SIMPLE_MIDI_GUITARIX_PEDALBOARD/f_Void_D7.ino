@@ -1,6 +1,5 @@
 //-----------------PIN D7----------------------------
-#define buttonPin7_pedal_5 7 //D7
- Bounce buttonPin7_pedal5 =  Bounce(buttonPin7_pedal_5, 70);
+Bounce2::Button buttonPin7_pedal5 = Bounce2::Button();
 
 void button6 () 
                 {

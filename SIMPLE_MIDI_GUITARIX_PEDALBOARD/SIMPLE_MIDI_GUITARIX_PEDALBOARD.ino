@@ -16,11 +16,12 @@ Si usa Hairless-Midiserial habilite la linea MIDI.turnThruOff() en la pestaña S
 */
 
 #include <MIDI.h>//https://github.com/FortySevenEffects/arduino_midi_library
-#include <Bounce.h>
+#include <Bounce2.h>
 
 MIDI_CREATE_DEFAULT_INSTANCE();                    
                       
 const int buttonPin[] = {2, 3, 4, 5, 6, 7, 8}; //{D2, D3,.........,D8}- Pines digitales asignados a cada pulsador, inicia con el pulsador de Cambio de MODO BANCO A INDIVIDUAL D2 = 2
+const int BouncePin[] = {2, 3, 4, 5, 6, 7, 8};
 const int CC[] = {51, 52, 53, 54, 55, 56}; // Numero de Control Change (similar a NOTAS) para PIN DIGITAL apartir del D3, D4,..., D8.
 const int LED[] = {9, 10, 11, 12, 13, A0, A1,A2, A3, A4, A5}; //PIN DIGITAL ENCENDER LED
 
