@@ -10,7 +10,7 @@ https://www.gnu.org/
 <img src="https://raw.githubusercontent.com/fernando-inf/SIMPLE-MIDI-GUITARIX-PEDALBOARD/main/SIMPLE_MIDI_GUITARIX_PEDALBOARD/PedalBoardMIDI-4.JPG" width="100%"></img> 
 # INSTALACIÓN DEL FIRMWARE
 - Abrir el archivo SIMPLE_MIDI_GUITARIX_PEDALBOARD.ino Arduino IDE y cargarglo en su placa de desarrollo.
-- Previamente debera tener instalada la biblioteca MIDI Library (by Francois Best), para esto dirijirse en Arduino IDE a "Herramientas -> Administrar Bibliotecas..." y buscarla.
+- Previamente debera tener instaladas las bibliotecas Bounce2, LiquidCrystal y MIDI Library (by Francois Best), para esto dirijirse en Arduino IDE a "Herramientas -> Administrar Bibliotecas..." y buscarla.
 # FUNCIONAMIENTO
 Descargue la ultima versión SimulIDE que incluye soporte para Arduino: https://www.simulide.com/p/downloads.html
 
