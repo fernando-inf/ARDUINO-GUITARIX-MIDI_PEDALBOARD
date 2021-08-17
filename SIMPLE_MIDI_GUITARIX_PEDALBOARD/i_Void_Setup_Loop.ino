@@ -13,38 +13,38 @@ void setup()
                     {pinMode(LED[i],OUTPUT);}//i = numero de PINES DIGITALES para los LED
               
                 //BOUNCE2
-                          buttonPin3_pedal1.attach(buttonPin[1]);
-                          buttonPin3_downBank.attach(buttonPin[1]);
+                          buttonP1_pedal1.attach(buttonPin[1]);
+                          buttonP1_downBank.attach(buttonPin[1]);
                           
-                          buttonPin4_pedal2.attach(buttonPin[2]);
-                          buttonPin4_upBank.attach(buttonPin[2]);
+                          buttonP2_pedal2.attach(buttonPin[2]);
+                          buttonP2_upBank.attach(buttonPin[2]);
                           
-                          buttonPin5_pedal3.attach(buttonPin[3]);
-                          buttonPin6_pedal4.attach(buttonPin[4]);
-                          buttonPin7_pedal5.attach(buttonPin[5]);
-                          buttonPin8_pedal6.attach(buttonPin[6]);
+                          buttonP3_pedal3.attach(buttonPin[3]);
+                          buttonP4_pedal4.attach(buttonPin[4]);
+                          buttonP5_pedal5.attach(buttonPin[5]);
+                          buttonP6_pedal6.attach(buttonPin[6]);
           
-                          buttonPin3_pedal1.interval(70);
-                          buttonPin3_downBank.interval(70);
+                          buttonP1_pedal1.interval(70);
+                          buttonP1_downBank.interval(70);
                           
-                          buttonPin4_pedal2.interval(70);
-                          buttonPin4_upBank.interval(70);
+                          buttonP2_pedal2.interval(70);
+                          buttonP2_upBank.interval(70);
                           
-                          buttonPin5_pedal3.interval(70);
-                          buttonPin6_pedal4.interval(70);
-                          buttonPin7_pedal5.interval(70);
-                          buttonPin8_pedal6.interval(70);
+                          buttonP3_pedal3.interval(70);
+                          buttonP4_pedal4.interval(70);
+                          buttonP5_pedal5.interval(70);
+                          buttonP6_pedal6.interval(70);
           
-                          buttonPin3_pedal1.setPressedState(LOW); 
-                          buttonPin3_downBank.setPressedState(LOW); 
+                          buttonP1_pedal1.setPressedState(LOW); 
+                          buttonP1_downBank.setPressedState(LOW); 
                           
-                          buttonPin4_pedal2.setPressedState(LOW); 
-                          buttonPin4_upBank.setPressedState(LOW); 
+                          buttonP2_pedal2.setPressedState(LOW); 
+                          buttonP2_upBank.setPressedState(LOW); 
                           
-                          buttonPin5_pedal3.setPressedState(LOW); 
-                          buttonPin6_pedal4.setPressedState(LOW); 
-                          buttonPin7_pedal5.setPressedState(LOW); 
-                          buttonPin8_pedal6.setPressedState(LOW); 
+                          buttonP3_pedal3.setPressedState(LOW); 
+                          buttonP4_pedal4.setPressedState(LOW); 
+                          buttonP5_pedal5.setPressedState(LOW); 
+                          buttonP6_pedal6.setPressedState(LOW); 
 
                 //SI USA LCD 16x2 CON ARDUINO MEGA
                 lcd.begin(16, 2);

@@ -1,13 +1,13 @@
 //-----------------PIN D7----------------------------
-Bounce2::Button buttonPin8_pedal6 = Bounce2::Button();
+Bounce2::Button buttonP6_pedal6 = Bounce2::Button();
 
 void button7() 
                 {
                   //FUNCION PEDALES INDIVIDUALES
                   if (TgSt[0] == 0)  // SI EL ESTADO DE PIN D2 ES ENCENDIDO
                         { 
-                           buttonPin8_pedal6.update(); // Bounce- Lee el botón y actualiza su estado. Esta función update () debe ser llamado regularmente, por lo que la entrada en el pin se reconoce correctamente. La devolución es verdadera si la entrada cambia, o false de lo contrario. 
-                           if (buttonPin8_pedal6.fallingEdge())//Bounce- fallingEdge= Comprueba si hay una transición de alta a baja del pulsador.
+                           buttonP6_pedal6.update(); // Bounce- Lee el botón y actualiza su estado. Esta función update () debe ser llamado regularmente, por lo que la entrada en el pin se reconoce correctamente. La devolución es verdadera si la entrada cambia, o false de lo contrario. 
+                           if (buttonP6_pedal6.fallingEdge())//Bounce- fallingEdge= Comprueba si hay una transición de alta a baja del pulsador.
                                 { 
                                   if      (TgSt[6] == 1){MIDI.sendControlChange(CC[5], ValOn, Ch);   digitalWrite(LED[6], HIGH);TgSt[6] = 0;}
                                   else if (TgSt[6] == 0){MIDI.sendControlChange(CC[5], ValOff, Ch);  digitalWrite(LED[6], LOW); TgSt[6] = 1;}
@@ -16,8 +16,8 @@ void button7()
 
                   //FUNCION PRESET/PROGRAMA
                   else { // SI EL ESTADO DE PIN D3 ES APAGADO
-                           buttonPin8_pedal6.update(); // Bounce- Lee el botón y actualiza su estado. Esta función update () debe ser llamado regularmente, por lo que la entrada en el pin se reconoce correctamente. La devolución es verdadera si la entrada cambia, o false de lo contrario. 
-                           if (buttonPin8_pedal6.fallingEdge())//Bounce- fallingEdge= Comprueba si hay una transición de alta a baja del pulsador.
+                           buttonP6_pedal6.update(); // Bounce- Lee el botón y actualiza su estado. Esta función update () debe ser llamado regularmente, por lo que la entrada en el pin se reconoce correctamente. La devolución es verdadera si la entrada cambia, o false de lo contrario. 
+                           if (buttonP6_pedal6.fallingEdge())//Bounce- fallingEdge= Comprueba si hay una transición de alta a baja del pulsador.
                                 {
                                   pc = 3;
                                   MIDI.sendControlChange(MSB_LSB, byte(BankMSB_LSB), Ch); //MIDI.sendControlChange(cc, valor, ch); CC=0 es MSB, CC=32 es LSB.

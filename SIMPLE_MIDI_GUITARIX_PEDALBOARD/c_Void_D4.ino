@@ -1,13 +1,13 @@
 //-----------------PIN D4----------------------------
-Bounce2::Button buttonPin4_pedal2 = Bounce2::Button();
-Bounce2::Button buttonPin4_upBank = Bounce2::Button();
+Bounce2::Button buttonP2_pedal2 = Bounce2::Button();
+Bounce2::Button buttonP2_upBank = Bounce2::Button();
 void button3 () 
                 {
                   //FUNCION PEDALES INDIVIDUALES
                   if (TgSt[0] == 0)  // SI EL ESTADO DE PIN D2 ES ENCENDIDO
                         { 
-                           buttonPin4_pedal2.update(); // Bounce- Lee el botón y actualiza su estado. Esta función update () debe ser llamado regularmente, por lo que la entrada en el pin se reconoce correctamente. La devolución es verdadera si la entrada cambia, o false de lo contrario. 
-                           if (buttonPin4_pedal2.fallingEdge())//Bounce- fallingEdge= Comprueba si hay una transición de alta a baja del pulsador.
+                           buttonP2_pedal2.update(); // Bounce- Lee el botón y actualiza su estado. Esta función update () debe ser llamado regularmente, por lo que la entrada en el pin se reconoce correctamente. La devolución es verdadera si la entrada cambia, o false de lo contrario. 
+                           if (buttonP2_pedal2.fallingEdge())//Bounce- fallingEdge= Comprueba si hay una transición de alta a baja del pulsador.
                                 { 
                                   if      (TgSt[2] == 1){MIDI.sendControlChange(CC[1], ValOn, Ch);   digitalWrite(LED[2], HIGH);TgSt[2] = 0;}
                                   else if (TgSt[2] == 0){MIDI.sendControlChange(CC[1], ValOff, Ch);  digitalWrite(LED[2], LOW); TgSt[2] = 1;}
@@ -21,8 +21,8 @@ void button3 ()
                   else { // SI EL ESTADO DE PIN D2 ES APAGADO
                           digitalWrite(LED[2], LOW); //APAGAR LED
                           
-                          buttonPin4_upBank.update(); // Bounce- Lee el botón y actualiza su estado. Esta función update () debe ser llamada regularmente, por lo que la entrada en el pin se reconoce correctamente. La devolución es verdadera si la entrada cambia, o falsa de lo contrario. 
-                          if (buttonPin4_upBank.fallingEdge()) //Bounce- fallingEdge= Comprueba si hay una transición de alta a baja del pulsador. 
+                          buttonP2_upBank.update(); // Bounce- Lee el botón y actualiza su estado. Esta función update () debe ser llamada regularmente, por lo que la entrada en el pin se reconoce correctamente. La devolución es verdadera si la entrada cambia, o falsa de lo contrario. 
+                          if (buttonP2_upBank.fallingEdge()) //Bounce- fallingEdge= Comprueba si hay una transición de alta a baja del pulsador. 
                                 {
                                   BankMSB_LSB++; // Incrementa el cambio de Banco
                                   if (BankMSB_LSB > BankMax) BankMSB_LSB = 0; // Si supera por encima de 3 pasa a 0
