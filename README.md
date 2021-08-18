@@ -12,6 +12,12 @@ https://www.gnu.org/
 - Abrir el archivo SIMPLE_MIDI_GUITARIX_PEDALBOARD.ino con Arduino IDE y cargarglo en su placa de desarrollo.
 - Previamente debera tener instaladas las bibliotecas Bounce2, LiquidCrystal y MIDI Library (by Francois Best), para esto dirijirse a Arduino IDE "Herramientas -> Administrar Bibliotecas..." y buscarla.
 # FUNCIONAMIENTO
+- El Pulsador que esta en el sector medio superior del pedal y que a la misma vez contiene un LED azul cambia de MODO BANCO a MODO INDIVIDUAL.
+- MODO BANCO: El Pedal 1 Decrementa el Valor de Banco y el Pedal 2 lo Incrementa. Los Pedales del 3 al 6 representan a un Preset A-B-C-D.
+- MODO INDIVIDUAL: Los Pedales 1 al 6 efectuan el enciendido y apagado de efectos.
+- La Pedalera inicia en MODO BANCO en el Banco 0 y Preset 0 (A), sin embargo queda a la espera (LEDs Parpadeando) de la confirmación de selección de preset. Usted debe confirmar el preset antes de pasar el MODO INDIVIDUAL ya que, los LEDs seguirán parpadeando impidiendo el correcto funcionamiento de este MODO. Además, con cada pulsación de los Pedales 1 y 2 los LEDs volverán a Parpadear y, usted debera necesariamente confirmar el preset.
+
+- Simulación:
 Descargue la ultima versión SimulIDE que incluye soporte para Arduino: https://www.simulide.com/p/downloads.html
 
 Abrir el archivo SIMULIDE-PedalBoardMIDI.simu que se encuentra en la carpeta del proyecto. De no iniciar la simulación haga click derecho sobre la placa Arduino y LOAD FIRMWARE, luego seleccione alguno de los archivos con extensión HEX que están en la carpeta principal del proyecto.
