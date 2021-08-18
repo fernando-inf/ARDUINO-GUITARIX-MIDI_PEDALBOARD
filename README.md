@@ -77,18 +77,23 @@ Gomitas de Jeringa: que servirán para soporte y no desplazamiento del pedal en 
 - Considere usar Noise Repellent como Reductor de Ruido (No es puerta de Ruido): https://github.com/lucianodato/noise-repellent, si bien provoca latencia, vale la pena probarlo.
 
 # OTRA INFORMACIÓN
-Abra el archivo SIMPLE_MIDI_GUITARIX_PEDALBOARD.ino con Arduino IDE. En la primer pestaña encontrara los pines asignados a LEDs y Pedales. Todos los Pines y señales MIDI CC son modificables pero, no realice ningún cambio sin antes hacer una copia de los archivos. Puede usar simuladores (SimulIDE) y el Debug de Hairless MIDI to Serial para probar los cambios que realice. 
-Tenga la gentileza de informarme sobre los avances significativos que haga usted en el proyecto.
+Abra el archivo SIMPLE_MIDI_GUITARIX_PEDALBOARD.ino con Arduino IDE. En la primer pestaña encontrará los pines asignados a LEDs y Pedales. Todos los Pines y señales MIDI CC son modificables pero, no realice ningún cambio sin antes hacer una copia de los archivos. Puede usar simuladores (SimulIDE) y el Debug de Hairless MIDI to Serial para probar los cambios que realice.
 
+Ver la simulación en SimulIDE para entender mejor la asignación de Pines:
+´const int buttonPin[] = {2, 3, 4, 5, 6, 7, 8}; //{D2, D3,.........,D8}´
+´const int LED[] = {9, 10, 11, 12, 13, A0, A1,A2, A3, A4, A5}; //{D9, D10,.........,A5}´
+´const int CC[] = {51, 52, 53, 54, 55, 56}; // Numero de Control Change para cada pulsador/pedal D3, D4,..., D8.
+  
 Si usa ttymidi en GNU/Linux ejecutelo así (de no funcionar o funcionar mal en primera instancia):
 
 `$ ttymidi -s /dev/ttyUSB0 --baudrate=115200`
 
 Recuerde que ttymidi solo se iniciará si conecto previamente Arduino al puerto usb. Asi mismo verifique que previamente no ha quedado abierta otra instancia de ttymidi, de ser así, cierrela en su Gestor/Administrador de tareas.
 
-Si usa Hairless-Midiserial (en formato compilado solo esta disponible para sistemas operativos de 32 bits en GNU/Linux) habilite la linea MIDI.turnThruOff() en la pestaña SETUP;
+Si usa Hairless-Midiserial (en formato compilado solo esta disponible para sistemas operativos de 32 bits en GNU/Linux) habilite la linea ´MIDI.turnThruOff() en la pestaña SETUP;
 
 
+Tenga la gentileza de informarme sobre los avances significativos que haga usted en el proyecto.
 
 fernando-inf@hotmail.com
 
