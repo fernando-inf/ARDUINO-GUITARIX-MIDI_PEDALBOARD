@@ -12,7 +12,7 @@ void MIDI_Input_CC(byte channel, byte number, byte value) //Revisar Channel, pod
                   for (int i = 0; i <=5; i++) {if (number == CC[i]) {if(value == ValOn) {TgStB[i] = 0;} if(value == ValOff) {TgStB[i] = 1;}}}//Cambia el estado de TgStB (TgSt solo para MODO Banco), su objetivo es encender o apagar los LED cuando se pasa del MODO BANCO al MODO INDIVIDUAL, mostrando asi el estado de los pedales en el MODO INDIVIDUAL provocado cuando se estaba en el MODO BANCO, para esto se usa otros TgSt denominados "TgStB"
                                                                                                                                              //Si usted esta usando una pedalera con 12 pedales, 6 para MODO BANCO y 6 para MODO INDIVIDUAL debe eliminar esta parte del codigo o comentarla (debera eliminar otras partes tambien).
             
-                  if (TgSt[0] == 0 && number == 32 || number == 0) {for (int i = 0; i <=3; i++){if(value == i ) {BankMSB_LSB = i;}}}//Estando la pedalera en MODO INDIVIDUAL, obtiene el estado controlChange (CC32 o CC0) para cuando se pase al MODO BANCO se refleje en los led- VER VoidButton2
+                  if (TgSt[0] == 0 && number == 32 || number == 0) {for (int i = 0; i <=3; i++){if(value == i ) {ValBank = i;}}}//Estando la pedalera en MODO INDIVIDUAL, obtiene el estado controlChange (CC32 o CC0) para cuando se pase al MODO BANCO se refleje en los led- VER VoidButton2
             
             
             
