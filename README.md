@@ -18,11 +18,11 @@ Abrir el archivo SIMULIDE-PedalBoardMIDI.simu que se encuentra en la carpeta del
 
 La versión simple y económica de este proyecto esta limitada a 4 Bancos (con 4 preset cada uno, total: 16 presets), ya que son la cantidad de LEDs disponibles para mostrar el estado de los mismos en Arduino Nano. Se esta trabajando en otra versión con display de 7 segmentos que incrementará el costo. A futuro se espera diseñar una pedalera mas grande con pantalla LCD GRAFICA. Igualmente en el código se ofrece la posibilidad de usar un LCD 16x2 a quienes tengan un Arduinoo Mega, en cuyo caso en la primer pestaña del còdigo reemplazar:
 
-`const int BankMax = 3;`
+`const int ValBankMax = 3;`
 
 por
 
-`const int BankMax = 127;`
+`const int ValBankMax = 127;`
 
 <img src="https://raw.githubusercontent.com/fernando-inf/SIMPLE-MIDI-GUITARIX-PEDALBOARD/main/SIMPLE_MIDI_GUITARIX_PEDALBOARD/Arduino_MEGA-%20LCD16x2/SIMULIDE-PedalBoardMIDI-MEGA.png" width="100%"></img> 
 
