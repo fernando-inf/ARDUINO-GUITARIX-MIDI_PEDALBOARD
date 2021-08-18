@@ -96,7 +96,7 @@ Recuerde que ttymidi solo se iniciará si conecto previamente Arduino al puerto 
 Si usa Hairless-Midiserial (en formato compilado solo esta disponible para sistemas operativos de 32 bits en GNU/Linux) habilite la linea ´MIDI.turnThruOff() en la pestaña SETUP;
 
 
-Tenga la gentileza de informarme sobre los avances significativos que haga usted en el proyecto.
+Tenga la gentileza de informarme sobre los avances significativos que haga usted en el proyecto y de enviarme foto de su versión de esta pedalera.
 
 fernando-inf@hotmail.com
 
