@@ -66,7 +66,6 @@ Este proyecto pretende usar materiales reciclados, quien escribe no responde por
 Conector USB tipo B: reciclado de impresora o modem para no conectar directamente Arduino a la PC. 
 Switch (on/off): reciclado de un Hub USB para encender y apagar la pedalera.
 Porcelana fría: para dar forma al soporte de los LEDs en la parte interior del perfil de chapa galvanizada.
-Gomitas de Jeringa: que servirán para soporte y no desplazamiento del pedal en el suelo.
 <img src="https://raw.githubusercontent.com/fernando-inf/SIMPLE-MIDI-GUITARIX-PEDALBOARD/main/SIMPLE_MIDI_GUITARIX_PEDALBOARD/PedalBoardMIDI-5.png" width="100%"></img> 
 
 # ADVERTENCIAS/ACLARACIONES
