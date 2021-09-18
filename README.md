@@ -7,7 +7,10 @@ https://www.gnu.org/
 <img src="https://raw.githubusercontent.com/fernando-inf/ARDUINO-GUITARIX-MIDI_PEDALBOARD/main/ARDUINO-GUITARIX-MIDI_PEDALBOARD/Miscellanea/PedalBoardMIDI-3.JPG" width="100%"></img> 
 
 <img src="https://raw.githubusercontent.com/fernando-inf/ARDUINO-GUITARIX-MIDI_PEDALBOARD/main/ARDUINO-GUITARIX-MIDI_PEDALBOARD/Miscellanea/PedalBoardMIDI-4.JPG" width="100%"></img>
-<img src="https://raw.githubusercontent.com/fernando-inf/SIMPLE-MIDI-GUITARIX-PEDALBOARD/main/SIMPLE_MIDI_GUITARIX_PEDALBOARD/PedalBoardMIDI-4.JPG" width="100%"></img> 
+<img src="https://raw.githubusercontent.com/fernando-inf/ARDUINO-GUITARIX-MIDI_PEDALBOARD/main/ARDUINO-GUITARIX-MIDI_PEDALBOARD//Arduino_Nano-LEDs/SIMULIDE-PedalBoardMIDI.png" width="100%"></img> 
+<img src="https://raw.githubusercontent.com/fernando-inf/ARDUINO-GUITARIX-MIDI_PEDALBOARD/main/ARDUINO-GUITARIX-MIDI_PEDALBOARD/Arduino_MEGA-OLED/SIMULIDE-PedalBoardMIDI.png" width="100%"></img> 
+<img src="https://raw.githubusercontent.com/fernando-inf/ARDUINO-GUITARIX-MIDI_PEDALBOARD/main/ARDUINO-GUITARIX-MIDI_PEDALBOARD/Arduino_MEGA-LCD16x2/SIMULIDE-PedalBoardMIDI.png" width="100%"></img> 
+<img src="https://raw.githubusercontent.com/fernando-inf/ARDUINO-GUITARIX-MIDI_PEDALBOARD/main/ARDUINO-GUITARIX-MIDI_PEDALBOARD/Arduino_Nano-Display7Segment/SIMULIDE-PedalBoardMIDI.png" width="100%"></img> 
 # INSTALACIÓN DEL FIRMWARE
 - Abrir el archivo SIMPLE_MIDI_GUITARIX_PEDALBOARD.ino con Arduino IDE y cargarglo en su placa de desarrollo.
 - Previamente debera tener instaladas las bibliotecas Bounce2, LiquidCrystal y MIDI Library (by Francois Best), para esto dirijirse a Arduino IDE "Herramientas -> Administrar Bibliotecas..." y buscarla.
