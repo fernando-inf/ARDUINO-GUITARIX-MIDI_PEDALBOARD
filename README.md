@@ -37,7 +37,7 @@ Habilite su configuración con un valor = 1
 # MEDIDAS
 Entrar a: https://app.sketchup.com
 
-Abrir el archivo SKETCHUP-SIMPLE-MIDI-GUITARIX-PEDALBOARD.skp que se encuentra en la carpeta del proyecto.
+Abrir el archivo CON EXTENSIÓN ".skp" que se encuentra en la carpeta Miscellanea.
 
 # MATERIALES
 Este proyecto pretende usar materiales reciclados, quien escribe no responde por lo daños económicos que puedan causar los detalles descriptos en este apartado:
