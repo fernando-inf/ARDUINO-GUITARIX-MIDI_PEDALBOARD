@@ -25,7 +25,7 @@ https://github.com/fernando-inf/ARDUINO-GUITARIX-MIDI_PEDALBOARD
   
   - MIDI Library: https://github.com/FortySevenEffects/arduino_midi_library
   
-  - Si usa USB-MIDI: Ardino USB-MIDI https://github.com/lathoub/Arduino-USBMIDI
+  - Si usa USB-MIDI: Arudino USB-MIDI https://github.com/lathoub/Arduino-USBMIDI
   
   - Si usa Bluetooth con ESP32: Arduino BLE MIDI https://github.com/lathoub/Arduino-BLE-MIDI
   
@@ -41,6 +41,15 @@ https://github.com/fernando-inf/ARDUINO-GUITARIX-MIDI_PEDALBOARD
 
 - Compilar y subir el código a su placa de desarrollo.
 
+# SOPORTE DE PLACAS DE DESARROLLO
+- Si para mostrar los datos de número de banco y preset usa:
+  - LEDs: Arduino Mega, Uno, Nano, Leonardo.
+  - Display 7 Segmentos 2 dígitos con chip- SIEMENS SDA2131 (16bits) o 74HC595 x 2 (8bits + 8bits): Arduino Mega, Uno, Nano, Leonardo.
+  - LCD 16x2: Arduino Mega.
+  - LCD 16x2 con I2C: Arduino Mega, Uno y Nano.
+  - Display OLED: Arduino Mega.
+- Si usa conexión nativa usb: Arduino Leonardo, Micro.
+- Si usa Bluetooth: ESP32 (Por una cuestión de limitación de pines no puede mostrar los datos de número de banco y preset)
   
 # FUNCIONAMIENTO
 - El Pulsador que está en el sector medio superior del pedal y que a la misma vez contiene un LED azul cambia de MODO BANCO a MODO INDIVIDUAL, también lo hace el Pedal 1 si lo mantiene presionado por más de medio segundo.
