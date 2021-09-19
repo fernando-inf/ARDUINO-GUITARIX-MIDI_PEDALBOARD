@@ -15,11 +15,11 @@
 
 //*****************************************
 //SELECT DISPLAY, BOARD, OTHER SETTINGS
-#define USE_LEDs                          0  // Si Muestra el Valor de Bank con luces led = 1, de lo conrario 0.
-#define USE_7SEGMENTS_16bits              1  // Si Muestra el Valor de Bank con Display 7 Segmentos 2 Digitos + SIEMENS SDA-2131 (16bits) o 2 x 74HC595 (8bits + 8bits)= 1, de lo conrario 0. Ver 74HC595 (8bits x 2): https://youtu.be/QI1IJLB42G8?t=593 .
+#define USE_LEDs                          0  // Si Muestra el Valor de Bank con luces led = 1, de lo conrario 0. Solo Arduino Mega, Uno, Nano, Leonardo.
+#define USE_7SEGMENTS_16bits              0  // Si Muestra el Valor de Bank con Display 7 Segmentos 2 Digitos + SIEMENS SDA-2131 (16bits) o 2 x 74HC595 (8bits + 8bits)= 1, de lo conrario 0. Ver 74HC595 (8bits x 2): https://youtu.be/QI1IJLB42G8?t=593 . Solo Arduino Mega, Uno, Nano, Leonardo.
 #define USE_LCD                           0  // Si Muestra la información con LCD = 1, de lo conrario 0. Solo Arduino Mega.
-#define USE_LCDI2C                        0  // Si Muestra la información con LCD I2C = 1, de lo conrario 0. Solo Arduino, no ESP32.
-#define USE_OLED                          0  // Si Muestra la información con OLED = 1 (SSD1306 128x64 I2C), de lo conrario 0. Solo Arduino Mega (se deden modificar asignación de pines para Arduino Leonardo, aun no soportado).
+#define USE_LCDI2C                        0  // Si Muestra la información con LCD I2C = 1, de lo conrario 0. Solo Arduino Mega, Uno y Nano.
+#define USE_OLED                          1  // Si Muestra la información con OLED = 1 (SSD1306 128x64 I2C), de lo conrario 0. Solo Arduino Mega.
 
 #define USE_USBMIDI                       0  // Si usa conexion USB Nativa = 1. Solo Arduino Leonardo/Micro.
 #define USE_ESP32BluetoothBLE             0  // Si usa Bluetooth con ESP32, esta limitado en número de Pins, no puede mostrar el estado de los Bancos con luces LED ni LCD/OLED, a futuro se implementará uso de MUX. ¡ADVERTENCIA!: Los pulsadores no usan PULLUP interno.
