@@ -77,15 +77,15 @@ Porcelana fría: para dar forma al soporte de los LEDs en la parte interior del 
 - Considere usar Noise Repellent como Reductor de Ruido (No es puerta de Ruido): https://github.com/lucianodato/noise-repellent, si bien provoca latencia, vale la pena probarlo.
 
 # OTRA INFORMACIÓN
-Abra el archivo SIMPLE_MIDI_GUITARIX_PEDALBOARD.ino con Arduino IDE. En la primer pestaña encontrará los pines asignados a LEDs y Pedales. Todos los Pines y señales MIDI CC son modificables pero, no realice ningún cambio sin antes hacer una copia de los archivos. Puede usar simuladores (SimulIDE) y el Debug de Hairless MIDI to Serial para probar los cambios que realice.
+Abra el archivo ARDUINO-GUITARIX-MIDI_PEDALBOARD.ino con Arduino IDE. En la primer pestaña encontrará los pines asignados a LEDs y Pedales. Todos los Pines y señales MIDI CC son modificables pero, no realice ningún cambio sin antes hacer una copia de los archivos. Puede usar simuladores (SimulIDE) y el Debug de Hairless MIDI to Serial para probar los cambios que realice.
 
 Ver la simulación en SimulIDE para entender mejor la asignación de Pines:
 
-`const int buttonPin[] = {2, 3, 4, 5, 6, 7, 8}; //{D2, D3,.........,D8}`
+`byte buttonPin[] = {2, 3, 4, 5, 6, 7, 8}; //{D2, D3,.........,D8}`
 
-`const int LED[] = {9, 10, 11, 12, 13, A0, A1,A2, A3, A4, A5}; //{D9, D10,.........,A5}`
+`const byte LED[] = {9, 10, 11, 12, 13, A0, A1,A2, A3, A4, A5}; //{D9, D10,.........,A5}`
 
-`const int CC[] = {51, 52, 53, 54, 55, 56}; // Numero de Control Change para cada pulsador/pedal D3, D4,..., D8.`
+`const byte CC[] = {51, 52, 53, 54, 55, 56}; // Numero de Control Change para cada pulsador/pedal D3, D4,..., D8.`
   
 Si usa ttymidi en GNU/Linux ejecutelo así (de no funcionar o funcionar mal en primera instancia):
 
