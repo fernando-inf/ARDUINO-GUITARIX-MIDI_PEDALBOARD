@@ -54,7 +54,7 @@ https://github.com/fernando-inf/ARDUINO-GUITARIX-MIDI_PEDALBOARD
   - LCD 16x2: Arduino Mega.
   - LCD 16x2 con I2C: Arduino Mega, Uno y Nano.
   - Display OLED SSD1306 I2C: Arduino Mega.
-- Si usa conexión nativa usb: Arduino Leonardo, Micro.
+- Si usa conexión usb-midi nativa: Arduino Leonardo, Micro.
 - Si usa conexión usb-midi mediante firmware Hiduino o similar: Arduino Mega 16u2, Uno 16u2.
 - Si usa Bluetooth: ESP32 (Por una cuestión de limitación de pines no puede mostrar los datos de número de banco y preset)
   
