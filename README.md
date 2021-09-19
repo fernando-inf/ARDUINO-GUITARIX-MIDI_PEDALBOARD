@@ -29,9 +29,9 @@ https://github.com/fernando-inf/ARDUINO-GUITARIX-MIDI_PEDALBOARD
   
   - Si usa Bluetooth con ESP32: 
   
-                                - Pack de tarjetas adicionales ESP32 https://dl.espressif.com/dl/package_esp32_index.json
+      - Pack de tarjetas adicionales ESP32 https://dl.espressif.com/dl/package_esp32_index.json
                                 
-                                - Arduino BLE MIDI https://github.com/lathoub/Arduino-BLE-MIDI 
+      - Arduino BLE MIDI https://github.com/lathoub/Arduino-BLE-MIDI 
                                 
   
   - Si usa LCD 16x2: LiquidCrystal https://www.arduino.cc/en/Reference/LiquidCrystal
