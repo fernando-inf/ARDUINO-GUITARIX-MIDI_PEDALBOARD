@@ -82,11 +82,11 @@ void Pedal1() {
             tgSt[1] = 1;
           }
 
-          if (tgSt[2] == 0) { //Pedal 1 es OverDrive y Pedal 2 es Distorsion, no pueden encenderse los 2, esta linea mantiene encendido uno solo.
-            MIDI.sendControlChange(CC[1], valOff, Ch);
-            digitalWrite(LED[2], LOW);
-            tgSt[2] = 1;
-          }
+          //if (tgSt[2] == 0) { //Pedal 1 es OverDrive y Pedal 2 es Distorsion, no pueden encenderse los 2, esta linea mantiene encendido uno solo.
+           // MIDI.sendControlChange(CC[1], valOff, Ch);
+            //digitalWrite(LED[2], LOW);
+            //tgSt[2] = 1;
+          //}
         }
 
         //MODO LOOPD
