@@ -127,9 +127,7 @@ Ver la simulación en SimulIDE para entender mejor la asignación de Pines:
 
 `const byte CC[] = {51, 52, 53, 54, 55, 56}; //Número de Control Change para cada pedal.`
   
-Si usa ttymidi en GNU/Linux ejecutelo así (de no funcionar o funcionar mal en primera instancia):
-
-`$ ttymidi -s /dev/ttyUSB0 --baudrate=115200`
+Si usa ttymidi en GNU/Linux, desargue y compile desde aquí: https://github.com/fernando-inf/mod-ttymidi
 
 Recuerde que ttymidi solo se iniciará si conecto previamente Arduino al puerto usb. Así mismo verifique que previamente no ha quedado abierta otra instancia de ttymidi, de ser así, ciérrela en su Gestor/Administrador de tareas.
 
