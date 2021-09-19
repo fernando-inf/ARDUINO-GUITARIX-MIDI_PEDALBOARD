@@ -13,7 +13,8 @@ https://www.gnu.org/
 <img src="https://raw.githubusercontent.com/fernando-inf/ARDUINO-GUITARIX-MIDI_PEDALBOARD/main/ARDUINO-GUITARIX-MIDI_PEDALBOARD/Arduino_Nano-Display7Segment/SIMULIDE-PedalBoardMIDI.png" width="100%"></img> 
 # INSTALACIÓN DEL FIRMWARE
 - Abrir el archivo ARDUINO-GUITARIX-MIDI_PEDALBOARD.ino con Arduino IDE y cargarlo en su placa de desarrollo.
-- DEPENDENCIAS
+- DEPENDENCIAS:
+
   Previamente deberá tener instaladas estas librerías, para esto dirigirse a Arduino IDE "Herramientas ->   Administrar Bibliotecas..." y buscarlas:
   
   - Bounce2: https://github.com/thomasfredericks/Bounce2
