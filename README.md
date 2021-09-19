@@ -15,13 +15,20 @@ https://www.gnu.org/
 - Abrir el archivo ARDUINO-GUITARIX-MIDI_PEDALBOARD.ino con Arduino IDE y cargarlo en su placa de desarrollo.
 - DEPENDENCIAS
   Previamente deberá tener instaladas estas librerías, para esto dirigirse a Arduino IDE "Herramientas ->   Administrar Bibliotecas..." y buscarlas:
-  Bounce2: https://github.com/thomasfredericks/Bounce2
-  MIDI Library: https://github.com/FortySevenEffects/arduino_midi_library
-  Si usa USB-MIDI: Ardino USB-MIDI https://github.com/lathoub/Arduino-USBMIDI
-  Si usa Bluetooth con ESP32: Arduino BLE MIDI https://github.com/lathoub/Arduino-BLE-MIDI
-  Si usa LCD 16x2: LiquidCrystal https://www.arduino.cc/en/Reference/LiquidCrystal
-  Si usa LCD 16x2 con I2C: LiquidCrystal_I2C https://github.com/johnrickman/LiquidCrystal_I2C
-  Si usa OLED 128x64 I2C: U8g2 https://github.com/olikraus/u8g2
+  
+  - Bounce2: https://github.com/thomasfredericks/Bounce2
+  
+  - MIDI Library: https://github.com/FortySevenEffects/arduino_midi_library
+  
+  - Si usa USB-MIDI: Ardino USB-MIDI https://github.com/lathoub/Arduino-USBMIDI
+  
+  - Si usa Bluetooth con ESP32: Arduino BLE MIDI https://github.com/lathoub/Arduino-BLE-MIDI
+  
+  - Si usa LCD 16x2: LiquidCrystal https://www.arduino.cc/en/Reference/LiquidCrystal
+  
+  - Si usa LCD 16x2 con I2C: LiquidCrystal_I2C https://github.com/johnrickman/LiquidCrystal_I2C
+  
+  - Si usa OLED 128x64 I2C: U8g2 https://github.com/olikraus/u8g2
   
 # FUNCIONAMIENTO
 - El Pulsador que está en el sector medio superior del pedal y que a la misma vez contiene un LED azul cambia de MODO BANCO a MODO INDIVIDUAL, también lo hace el Pedal 1 si lo mantiene presionado por más de medio segundo.
