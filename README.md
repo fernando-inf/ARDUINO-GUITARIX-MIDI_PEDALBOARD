@@ -108,7 +108,7 @@ Porcelana fría: para dar forma al soporte de los LEDs en la parte interior del 
 
 - Considere usar Noise Repellent como Reductor de Ruido (No es puerta de Ruido): https://github.com/lucianodato/noise-repellent, si bien provoca latencia, vale la pena probarlo.
 
-- MIDI DIN CONNECTOR: Si usted usará conexión MIDI mediante conector MIDI DIN a un Rack o pedalera, necesitará elaborar un circuito eléctrico adicional, especialmente para la recepción de mensajes MIDI por parte de Arduino. Existen diagramas de ejemplos en la web, búsquelos.
+- MIDI DIN CONNECTOR: Si usted usará conexión MIDI mediante conector MIDI DIN a un rack o pedal externo, necesitará elaborar un circuito eléctrico adicional, especialmente para la recepción de mensajes MIDI por parte de Arduino. Existen diagramas de ejemplos en la web, búsquelos.
 
 # OTRA INFORMACIÓN
 Abra el archivo ARDUINO-GUITARIX-MIDI_PEDALBOARD.ino con Arduino IDE. En la primer pestaña encontrará los pines asignados a LEDs y Pedales. Todos los Pines y señales MIDI CC son modificables pero, no realice ningún cambio sin antes hacer una copia de los archivos. Puede usar simuladores (SimulIDE) y el Debug de Hairless MIDI to Serial para probar los cambios que realice.
