@@ -29,7 +29,8 @@ La versión simple y económica de este proyecto esta limitada a 4 Bancos (con 4
 
 Esta Pedalera tiene la característica de recibir la señal MIDI del software y reflejarla en el pedal. Almacena las actualizaciones recibidas tanto en el MODO BANCO como en el MODO INIVIDUAL. Por ejemplo, si usted esta en el MODO BANCO y cambia de presets, la pedalera recibirá las actualizaciones de cada cambio de los pedales individuales (on/off) y los reflejara en los LEDs cuando usted cambie al MODO INDIVIDUAL. De esta forma sabrá el estado de los efectos sin tener que mirar la interfaz gráfica en su Monitor.
 
-#Habilite su configuración con un valor = 1
+# CONFIGURACIÓN
+Habilite su configuración con un valor = 1
 
 <img src="https://raw.githubusercontent.com/fernando-inf/ARDUINO-GUITARIX-MIDI_PEDALBOARD/main/ARDUINO-GUITARIX-MIDI_PEDALBOARD/Miscellanea/Arduino_Code_Choice.png" width="100%"></img> 
 
@@ -65,7 +66,7 @@ Este proyecto pretende usar materiales reciclados, quien escribe no responde por
 Conector USB tipo B: reciclado de impresora o modem para no conectar directamente Arduino a la PC. 
 Switch (on/off): reciclado de un Hub USB para encender y apagar la pedalera.
 Porcelana fría: para dar forma al soporte de los LEDs en la parte interior del perfil de chapa galvanizada.
-<img src="https://raw.githubusercontent.com/fernando-inf/SIMPLE-MIDI-GUITARIX-PEDALBOARD/main/SIMPLE_MIDI_GUITARIX_PEDALBOARD/PedalBoardMIDI-5.png" width="100%"></img> 
+<img src="https://raw.githubusercontent.com/fernando-inf/ARDUINO-GUITARIX-MIDI_PEDALBOARD/main/ARDUINO-GUITARIX-MIDI_PEDALBOARD/Miscellanea/PedalBoardMIDI-5.png" width="100%"></img> 
 
 # ADVERTENCIAS/ACLARACIONES
 - Luego de hacer pruebas exhaustivas se puede decir que: Si usted en Guitarix añadió un efecto, luego le asigno un MIDI CC y luego quito este efecto: es recomendable eliminar el MIDI CC asignado en la pestaña Motor-> Controlador MIDI. Así, se determino que se evita un bucle infinito de entradas y salidas de señales MIDI (si usted no elimina el CC asignado, Guitarix continuará enviando la señal MIDI, repetidas veces) ya que el Código de este PedalBoard habilita MIDI THRU para la correcta actualización de los preset con cada cambio de los mismos. Si se envían señales repetidas de un mismo MIDI CC se produce el bucle infinito (ver: https://github.com/brummer10/guitarix/issues/80).
