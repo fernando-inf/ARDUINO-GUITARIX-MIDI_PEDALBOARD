@@ -14,7 +14,7 @@
 */
 
 //*****************************************
-//SELECT DISPLAY, BOARD, OTHER SETTINGS
+//SELECT DISPLAY, BOARD, OTHER SETTINGS WHIT 1.
 #define USE_LEDs                          1  // Si Muestra el Valor de Bank con luces led = 1, de lo conrario 0. Solo Arduino Mega, Uno, Nano, Leonardo.
 #define USE_7SEGMENTS_16bits              0  // Si Muestra el Valor de Bank con Display 7 Segmentos 2 Digitos + SIEMENS SDA-2131 (16bits) o 2 x 74HC595 (8bits + 8bits)= 1, de lo conrario 0. Ver 74HC595 (8bits x 2): https://youtu.be/QI1IJLB42G8?t=593 . Solo Arduino Mega, Uno, Nano, Leonardo.
 #define USE_LCD                           0  // Si Muestra la información con LCD = 1, de lo conrario 0. Solo Arduino Mega.
