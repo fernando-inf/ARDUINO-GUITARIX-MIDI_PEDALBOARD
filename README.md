@@ -62,7 +62,7 @@ https://github.com/fernando-inf/ARDUINO-GUITARIX-MIDI_PEDALBOARD
 - El Pulsador que está en el sector medio superior del pedal y que a la misma vez contiene un LED azul cambia de MODO BANCO, INDIVIDUAL y LOOP/DRUM, también lo    hace el Pedal 1 si lo mantiene presionado por más de medio segundo.
 - MODO BANCO (Canal MIDI 1): El Pedal 1 Decrementa el Valor de Banco y el Pedal 2 lo Incrementa. Los Pedales del 3 al 6 representan a un Preset A-B-C-D.
 - MODO INDIVIDUAL (Canal MIDI 1): Los Pedales 1 al 6 efectúan el encendido y apagado de efectos.
-- MODO LOOP/DRUM (Canal MIDI 2): El Pedal 1 y 2 suben y bajan de Sample/Pattern Drum (usar Hydrogen), el Pedal 3 puede ser asignado para activar/desactivar el sample drum. El pedal 4 puede servir como TAP del programa de batería y loop, el pedal 5 para grabar el loop (usar Sooperlooper) y el Pedal 6 para Pause/Stop.
+- MODO LOOP/DRUM (Canal MIDI 2): El Pedal 1 y 2 suben y bajan de sample/pattern drum (usar Hydrogen https://github.com/hydrogen-music/hydrogen), el Pedal 3 puede ser asignado para activar/desactivar el sample drum. El pedal 4 puede servir como TAP del programa de batería y loop, el pedal 5 para grabar el loop (usar Sooperlooper https://github.com/essej/sooperlooper) y el Pedal 6 para Pause/Stop del mismo.
 - La Pedalera inicia en MODO BANCO en el Banco 0 y Preset 0 (A), sin embargo queda a la espera (LEDs Parpadeando) de la confirmación de selección de preset. Usted debe confirmar el preset antes de pasar el MODO INDIVIDUAL ya que, los LEDs seguirán parpadeando impidiendo el correcto funcionamiento de este MODO. Además, con cada pulsación de los Pedales 1 y 2 los LEDs volverán a Parpadear y, usted deberá necesariamente confirmar el preset.
 
 Simulación:
