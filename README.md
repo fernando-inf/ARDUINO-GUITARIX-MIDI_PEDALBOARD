@@ -12,12 +12,15 @@ https://www.gnu.org/
 <img src="https://raw.githubusercontent.com/fernando-inf/ARDUINO-GUITARIX-MIDI_PEDALBOARD/main/ARDUINO-GUITARIX-MIDI_PEDALBOARD/Arduino_MEGA-%20LCD16x2/SIMULIDE-PedalBoardMIDI-MEGA.png" width="100%"></img> 
 <img src="https://raw.githubusercontent.com/fernando-inf/ARDUINO-GUITARIX-MIDI_PEDALBOARD/main/ARDUINO-GUITARIX-MIDI_PEDALBOARD/Arduino_Nano-Display7Segment/SIMULIDE-PedalBoardMIDI.png" width="100%"></img> 
 # INSTALACIÓN DEL FIRMWARE
-- Abrir el archivo SIMPLE_MIDI_GUITARIX_PEDALBOARD.ino con Arduino IDE y cargarglo en su placa de desarrollo.
-- Previamente debera tener instaladas las bibliotecas Bounce2, LiquidCrystal y MIDI Library (by Francois Best), para esto dirijirse a Arduino IDE "Herramientas -> Administrar Bibliotecas..." y buscarla.
+- Abrir el archivo ARDUINO-GUITARIX-MIDI_PEDALBOARD.ino con Arduino IDE y cargarglo en su placa de desarrollo.
+- DEPENDENCIAS
+  Previamente debera tener instaladas ciertas librerias que Arduino le indicará a medida que compile el código, para esto dirijirse a Arduino IDE "Herramientas ->   Administrar Bibliotecas..." y buscarlas.
+  
 # FUNCIONAMIENTO
-- El Pulsador que esta en el sector medio superior del pedal y que a la misma vez contiene un LED azul cambia de MODO BANCO a MODO INDIVIDUAL.
+- El Pulsador que esta en el sector medio superior del pedal y que a la misma vez contiene un LED azul cambia de MODO BANCO a MODO INDIVIDUAL, también lo hace el Pedal 1 si lo mantiene preisonado por más de medio segundo.
 - MODO BANCO: El Pedal 1 Decrementa el Valor de Banco y el Pedal 2 lo Incrementa. Los Pedales del 3 al 6 representan a un Preset A-B-C-D.
 - MODO INDIVIDUAL: Los Pedales 1 al 6 efectuan el enciendido y apagado de efectos.
+- MODO LOOP/DRUM: El Pedal 1 y 2 suben y bajan de Sample/Pattern Drum (usar Hydrogen), el Pedal 3 puede ser asignado para activar/desactivar el sample drum. El pedal 4 puede servir como TAP del programa de bateria y loop, el pedal 5 para grabar el loop (usar Sooperlooper) y el Pedal 6 para Pause/Stop.
 - La Pedalera inicia en MODO BANCO en el Banco 0 y Preset 0 (A), sin embargo queda a la espera (LEDs Parpadeando) de la confirmación de selección de preset. Usted debe confirmar el preset antes de pasar el MODO INDIVIDUAL ya que, los LEDs seguirán parpadeando impidiendo el correcto funcionamiento de este MODO. Además, con cada pulsación de los Pedales 1 y 2 los LEDs volverán a Parpadear y, usted debera necesariamente confirmar el preset.
 
 Simulación:
