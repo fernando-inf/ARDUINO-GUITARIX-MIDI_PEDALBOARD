@@ -12,8 +12,9 @@ https://www.gnu.org/
 <img src="https://raw.githubusercontent.com/fernando-inf/ARDUINO-GUITARIX-MIDI_PEDALBOARD/main/ARDUINO-GUITARIX-MIDI_PEDALBOARD/Arduino_MEGA-%20LCD16x2/SIMULIDE-PedalBoardMIDI-MEGA.png" width="100%"></img> 
 <img src="https://raw.githubusercontent.com/fernando-inf/ARDUINO-GUITARIX-MIDI_PEDALBOARD/main/ARDUINO-GUITARIX-MIDI_PEDALBOARD/Arduino_Nano-Display7Segment/SIMULIDE-PedalBoardMIDI.png" width="100%"></img> 
 # INSTALACIÓN DEL FIRMWARE
-- Abrir el archivo ARDUINO-GUITARIX-MIDI_PEDALBOARD.ino con Arduino IDE y cargarlo en su placa de desarrollo.
-- DEPENDENCIAS:
+- Abrir el archivo ARDUINO-GUITARIX-MIDI_PEDALBOARD.ino con Arduino IDE.
+
+- Instále las dependencias:
 
   Previamente deberá tener instaladas estas librerías, para esto dirigirse a Arduino IDE "Herramientas ->   Administrar Bibliotecas..." y buscarlas:
   
@@ -31,6 +32,13 @@ https://www.gnu.org/
   
   - Si usa OLED 128x64 I2C: U8g2 https://github.com/olikraus/u8g2
   
+- Habilíte su configuración con un valor = 1.
+
+<img src="https://raw.githubusercontent.com/fernando-inf/ARDUINO-GUITARIX-MIDI_PEDALBOARD/main/ARDUINO-GUITARIX-MIDI_PEDALBOARD/Miscellanea/Arduino_Code_Choice.png" width="100%"></img>
+
+- Compilar y subir el código a su placa de desarrollo.
+
+  
 # FUNCIONAMIENTO
 - El Pulsador que está en el sector medio superior del pedal y que a la misma vez contiene un LED azul cambia de MODO BANCO a MODO INDIVIDUAL, también lo hace el Pedal 1 si lo mantiene presionado por más de medio segundo.
 - MODO BANCO: El Pedal 1 Decrementa el Valor de Banco y el Pedal 2 lo Incrementa. Los Pedales del 3 al 6 representan a un Preset A-B-C-D.
@@ -46,11 +54,6 @@ Abrir el archivo SIMULIDE-PedalBoardMIDI.simu que se encuentra en la carpeta del
 La versión simple y económica de este proyecto esta limitada a 4 Bancos (con 4 preset cada uno, total: 16 presets), ya que son la cantidad de LEDs disponibles para mostrar el estado de los mismos en Arduino Nano. Para el uso de display se habilitan 99 bancos, con 4 presets cada uno llegando a un total de 396 presets, suficientes para un usuario común.
 
 Esta Pedalera tiene la característica de recibir la señal MIDI del software y reflejarla en el pedal. Almacena las actualizaciones recibidas tanto en el MODO BANCO como en el MODO INIVIDUAL. Por ejemplo, si usted esta en el MODO BANCO y cambia de presets, la pedalera recibirá las actualizaciones de cada cambio de los pedales individuales (on/off) y los reflejará en los LEDs cuando usted cambie al MODO INDIVIDUAL. De esta forma sabrá el estado de los efectos sin tener que mirar la interfaz gráfica en su Monitor.
-
-# CONFIGURACIÓN
-Habilite su configuración con un valor = 1
-
-<img src="https://raw.githubusercontent.com/fernando-inf/ARDUINO-GUITARIX-MIDI_PEDALBOARD/main/ARDUINO-GUITARIX-MIDI_PEDALBOARD/Miscellanea/Arduino_Code_Choice.png" width="100%"></img> 
 
 # MEDIDAS
 Entrar a: https://app.sketchup.com
