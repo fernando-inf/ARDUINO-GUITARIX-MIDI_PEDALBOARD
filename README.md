@@ -129,7 +129,7 @@ Ver la simulación en SimulIDE para entender mejor la asignación de Pines:
   
 Si usa ttymidi en GNU/Linux, desargue y compile desde aquí: https://github.com/fernando-inf/mod-ttymidi
 
-Recuerde que ttymidi solo se iniciará si conecto previamente Arduino al puerto usb. Así mismo verifique que previamente no ha quedado abierta otra instancia de ttymidi, de ser así, ciérrela en su Gestor/Administrador de tareas.
+Recuerde que ttymidi solo se iniciará (comando `ttymidi` en terminal) si conecto previamente Arduino al puerto usb. Así mismo verifique que previamente no ha quedado abierta otra instancia de ttymidi, de ser así, ciérrela en su Gestor/Administrador de tareas.
 
 Si usa Hairless-Midiserial (en formato compilado solo está disponible para sistemas operativos de 32 bits en GNU/Linux, tendrá que instalar librerías adicionales para usarlo en sistemas de 64bits) habilite la linea `MIDI.turnThruOff()` en la pestaña SETUP;
 
