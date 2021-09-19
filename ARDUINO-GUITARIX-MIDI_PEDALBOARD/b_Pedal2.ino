@@ -32,11 +32,11 @@ void Pedal2() {
         tgSt[2] = 1;
       }
 
-      if (tgSt[1] == 0) { //Pedal 1 es OverDrive y Pedal 2 es Distorsion, no pueden encenderse los 2, esta linea mantiene encendido uno solo.
-        MIDI.sendControlChange(CC[0], valOff, Ch);
-        digitalWrite(LED[1], LOW);
-        tgSt[1] = 1;
-      }
+      //if (tgSt[1] == 0) { //Pedal 1 es OverDrive y Pedal 2 es Distorsion, no pueden encenderse los 2, esta linea mantiene encendido uno solo.
+        //MIDI.sendControlChange(CC[0], valOff, Ch);
+        //digitalWrite(LED[1], LOW);
+        //tgSt[1] = 1;
+      //}
     }
   }
 
