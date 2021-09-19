@@ -125,7 +125,7 @@ Ver la simulación en SimulIDE para entender mejor la asignación de Pines:
 
 `const byte LED[] = {9, 10, 11, 12, 13, A0, A1,A2, A3, A4, A5}; //Pines Digitales`
 
-`const byte CC[] = {51, 52, 53, 54, 55, 56}; //Numero de Control Change para cada pedal.`
+`const byte CC[] = {51, 52, 53, 54, 55, 56}; //Número de Control Change para cada pedal.`
   
 Si usa ttymidi en GNU/Linux ejecutelo así (de no funcionar o funcionar mal en primera instancia):
 
