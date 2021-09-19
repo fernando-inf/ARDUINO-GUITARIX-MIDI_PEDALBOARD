@@ -103,8 +103,12 @@ Porcelana fría: para dar forma al soporte de los LEDs en la parte interior del 
 
 # ADVERTENCIAS/ACLARACIONES
 - Luego de hacer pruebas exhaustivas se puede decir que: Si usted en Guitarix añadió un efecto, luego le asigno un MIDI CC y luego quito este efecto: es recomendable eliminar el MIDI CC asignado en la pestaña Motor-> Controlador MIDI. Así, se determino que se evita un bucle infinito de entradas y salidas de señales MIDI (si usted no elimina el CC asignado, Guitarix continuará enviando la señal MIDI, repetidas veces) ya que el Código de este PedalBoard habilita MIDI THRU para la correcta actualización de los preset con cada cambio de los mismos. Si se envían señales repetidas de un mismo MIDI CC se produce el bucle infinito (ver: https://github.com/brummer10/guitarix/issues/80).
+
 - La Chapa fina de lata de gaseosa mencionada en la sección  "Materiales", no ha sido probada en este proyecto (se uso otra placa antigua que se tenia disponible). Se puede notar que tiene mucha flexibilidad y se parte fácilmente al doblarla completamente, sin embargo es viable probarla ya que parece ser una buena alternativa de fácil disponibilidad.
+
 - Considere usar Noise Repellent como Reductor de Ruido (No es puerta de Ruido): https://github.com/lucianodato/noise-repellent, si bien provoca latencia, vale la pena probarlo.
+
+- MIDI DIN CONNECTOR: Si usted usará conexión MIDI mediante conector MIDI DIN a un Rack o pedalera, necesitará elaborar un circuito eléctrico adicional, especialmente para la recepción de mensajes MIDI por parte de Arduino. Existen diagramas de ejemplos en la web, búsquelos.
 
 # OTRA INFORMACIÓN
 Abra el archivo ARDUINO-GUITARIX-MIDI_PEDALBOARD.ino con Arduino IDE. En la primer pestaña encontrará los pines asignados a LEDs y Pedales. Todos los Pines y señales MIDI CC son modificables pero, no realice ningún cambio sin antes hacer una copia de los archivos. Puede usar simuladores (SimulIDE) y el Debug de Hairless MIDI to Serial para probar los cambios que realice.
