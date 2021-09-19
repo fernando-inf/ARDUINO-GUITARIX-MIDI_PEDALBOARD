@@ -52,7 +52,7 @@ https://github.com/fernando-inf/ARDUINO-GUITARIX-MIDI_PEDALBOARD
 - Si usa Bluetooth: ESP32 (Por una cuestión de limitación de pines no puede mostrar los datos de número de banco y preset)
   
 # FUNCIONAMIENTO
-- El Pulsador que está en el sector medio superior del pedal y que a la misma vez contiene un LED azul cambia de MODO BANCO a MODO INDIVIDUAL, también lo hace el Pedal 1 si lo mantiene presionado por más de medio segundo.
+- El Pulsador que está en el sector medio superior del pedal y que a la misma vez contiene un LED azul cambia de MODO BANCO, INDIVIDUAL y LOOP/DRUM, también lo hace el Pedal 1 si lo mantiene presionado por más de medio segundo.
 - MODO BANCO: El Pedal 1 Decrementa el Valor de Banco y el Pedal 2 lo Incrementa. Los Pedales del 3 al 6 representan a un Preset A-B-C-D.
 - MODO INDIVIDUAL: Los Pedales 1 al 6 efectúan el encendido y apagado de efectos.
 - MODO LOOP/DRUM: El Pedal 1 y 2 suben y bajan de Sample/Pattern Drum (usar Hydrogen), el Pedal 3 puede ser asignado para activar/desactivar el sample drum. El pedal 4 puede servir como TAP del programa de batería y loop, el pedal 5 para grabar el loop (usar Sooperlooper) y el Pedal 6 para Pause/Stop.
