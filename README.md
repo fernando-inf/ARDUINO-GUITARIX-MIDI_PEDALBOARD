@@ -8,7 +8,7 @@ https://github.com/fernando-inf/ARDUINO-GUITARIX-MIDI_PEDALBOARD
 # (MIDI Input - MIDI Output)
 
 - Licencia de uso: [GNU General Public License v3.0](https://github.com/fernando-inf/ARDUINO-GUITARIX-MIDI_PEDALBOARD/blob/main/LICENSE)
-- English Version: [ARDUINO/GUITARIX- MIDI PEDALBOARD](https://github-com.translate.goog/fernando-inf/ARDUINO-GUITARIX-MIDI_PEDALBOARD?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=es-419&_x_tr_pto=nui,elem)
+- English Version (Google translator): [ARDUINO/GUITARIX- MIDI PEDALBOARD](https://github-com.translate.goog/fernando-inf/ARDUINO-GUITARIX-MIDI_PEDALBOARD?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=es-419&_x_tr_pto=nui,elem)
 
 <img src="https://raw.githubusercontent.com/fernando-inf/ARDUINO-GUITARIX-MIDI_PEDALBOARD/main/ARDUINO-GUITARIX-MIDI_PEDALBOARD/Miscellanea/PedalBoardMIDI-6.png" width="100%"></img> 
 <img src="https://raw.githubusercontent.com/fernando-inf/ARDUINO-GUITARIX-MIDI_PEDALBOARD/main/ARDUINO-GUITARIX-MIDI_PEDALBOARD/Miscellanea/PedalBoardMIDI-7.png" width="100%"></img>
