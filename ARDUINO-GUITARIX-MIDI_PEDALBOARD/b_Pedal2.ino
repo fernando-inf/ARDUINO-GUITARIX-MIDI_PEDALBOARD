@@ -7,12 +7,12 @@ void Pedal2() {
   if (tgSt[0] == 0) {
     if (pedal_2.pressed()) {
       valBank++;
-      if (valBank > valBankMax) valBank = 0; //Incrementa el Valor de Banco. Si supera por encima del valor asignado a valBankMax pasa a 0
+      if (valBank > valBankMax) valBank = 0; //Incrementa el Valor de Banco. Si supera por encima del valor asignado a valBankMax pasa a 0.
       pc = 128;
       LCD_OLED();
       LEDBank_Preset();
     }
-    if (pedal_2.isPressed()) { //En MODO BANCO el LED del Pedal 1 se enciende al pulsarlo y apaga al soltarlo
+    if (pedal_2.isPressed()) { //En MODO BANCO el LED del Pedal 1 se enciende al pulsarlo y apaga al soltarlo.
       digitalWrite(LED[2], HIGH);
     } else {
       digitalWrite(LED[2], LOW);
@@ -32,7 +32,7 @@ void Pedal2() {
         tgSt[2] = 1;
       }
 
-      //if (tgSt[1] == 0) { //Pedal 1 es OverDrive y Pedal 2 es Distorsion, no pueden encenderse los 2, esta linea mantiene encendido uno solo.
+      //if (tgSt[1] == 0) { //Pedal 1 es OverDrive y Pedal 2 es Distorsión, no pueden encenderse los 2, esta linea mantiene encendido uno solo.
         //MIDI.sendControlChange(CC[0], valOff, Ch);
         //digitalWrite(LED[1], LOW);
         //tgSt[1] = 1;

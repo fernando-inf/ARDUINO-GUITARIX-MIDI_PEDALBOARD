@@ -1,21 +1,21 @@
 //Imprime los Datos en el LCD o OLED.
-//No debe colocarse "LCD_OLED();" en "void Loop", si se coloca ahi se imprimen los datos en el LCD en forma intermitente y no es lo correcto.
-//"LCD_OLED()" se incerta en cada Void de pulsador para que los cambios en el LCD solo se produzcan al pulsar el mismo.
+//No debe colocarse "LCD_OLED();" en "void Loop", si se coloca ahí se imprimen los datos en el LCD en forma intermitente y no es lo correcto.
+//"LCD_OLED()" se inserta en cada “void” de pulsador para que los cambios en el LCD solo se produzcan al pulsar el mismo.
 
 #if USE_LCD
 #include <LiquidCrystal.h> //https://www.arduino.cc/en/Reference/LiquidCrystal
-LiquidCrystal lcd(31, 33, 35, 37, 39, 41); //Pines de conexion al LCD- Para Arduino Mega.
+LiquidCrystal lcd(31, 33, 35, 37, 39, 41); //Pines de conexión al LCD- Para Arduino Mega.
 
 #elif USE_LCDI2C
 #include <Wire.h> //I2C
-#include <LiquidCrystal_I2C.h> //Conecte la pantalla a los pines SDA y SCL de su Placa.
-LiquidCrystal_I2C lcd(0x27, 16, 2); //(I2C-Dirección, columnas, lineas)- Si no inicia con la Dirección  0x27 pruebe con  0x3F o lea esto https://playground.arduino.cc/Main/I2cScanner/  https://forum.arduino.cc/t/solucionado-problema-con-lcd-16x2-con-i2c/380309
+#include <LiquidCrystal_I2C.h> //Conecte la pantalla a los pines SDA y SCL de su Placa. https://github.com/johnrickman/LiquidCrystal_I2C
+LiquidCrystal_I2C lcd(0x27, 16, 2); //(I2C-Dirección, columnas, líneas)- Si no inicia con la Dirección  0x27 pruebe con  0x3F o lea esto https://playground.arduino.cc/Main/I2cScanner/  https://forum.arduino.cc/t/solucionado-problema-con-lcd-16x2-con-i2c/380309
 
 #elif USE_OLED //OLED SSD1306 I2C (128X64)- CONECTAR A PINES SDA Y SCL DE SU PLACA.
 //#include <Arduino.h>
-#include <U8g2lib.h>
+#include <U8g2lib.h> //https://github.com/olikraus/u8g2
 #include <Wire.h>  //I2C
-U8G2_SSD1306_128X64_NONAME_F_SW_I2C u8g2(U8G2_R0, SCL, SDA, U8X8_PIN_NONE); //De no funcionar, cambiar esta linea por el modelo de su placa (ver mas abajo)
+U8G2_SSD1306_128X64_NONAME_F_SW_I2C u8g2(U8G2_R0, SCL, SDA, U8X8_PIN_NONE); //De no funcionar, cambiar esta línea por el modelo de su placa (ver más abajo)
 
 #elif USE_7SEGMENTS_16bits
 const int DATA = 16; // A2
@@ -330,39 +330,30 @@ void LCD_OLED() {
     if (valBank >= 0 && valBank <= 9) {
       displayNum(0, valBank);//displayNum(digitLeft, digitRigth)
     }
-
     if (valBank >= 10 && valBank <= 19) {
       displayNum(1, valBank - 10);
     }
-
     if (valBank >= 20 && valBank <= 29) {
       displayNum(2, valBank - 20);
     }
-
     if (valBank >= 30 && valBank <= 39) {
       displayNum(3, valBank - 30);
     }
-
     if (valBank >= 40 && valBank <= 49) {
       displayNum(4, valBank - 40);
     }
-
     if (valBank >= 50 && valBank <= 59) {
       displayNum(5, valBank - 50);
     }
-
     if (valBank >= 60 && valBank <= 69) {
       displayNum(6, valBank - 60);
     }
-
     if (valBank >= 70 && valBank <= 79) {
       displayNum(7, valBank - 70);
     }
-
     if (valBank >= 80 && valBank <= 89) {
       displayNum(8, valBank - 80);
     }
-
     if (valBank >= 90 && valBank <= 99) {
       displayNum(9, valBank - 90);
     }
@@ -386,39 +377,30 @@ void LCD_OLED() {
     if (valPCLoopD >= 0 && valPCLoopD <= 9) {
       displayNum(0, valPCLoopD);//displayNum(digitLeft, digitRigth)
     }
-
     if (valPCLoopD >= 10 && valPCLoopD <= 19) {
       displayNum(1, valPCLoopD - 10);
     }
-
     if (valPCLoopD >= 20 && valPCLoopD <= 29) {
       displayNum(2, valPCLoopD - 20);
     }
-
     if (valPCLoopD >= 30 && valPCLoopD <= 39) {
       displayNum(3, valPCLoopD - 30);
     }
-
     if (valPCLoopD >= 40 && valPCLoopD <= 49) {
       displayNum(4, valPCLoopD - 40);
     }
-
     if (valPCLoopD >= 50 && valPCLoopD <= 59) {
       displayNum(5, valPCLoopD - 50);
     }
-
     if (valPCLoopD >= 60 && valPCLoopD <= 69) {
       displayNum(6, valPCLoopD - 60);
     }
-
     if (valPCLoopD >= 70 && valPCLoopD <= 79) {
       displayNum(7, valPCLoopD - 70);
     }
-
     if (valPCLoopD >= 80 && valPCLoopD <= 89) {
       displayNum(8, valPCLoopD - 80);
     }
-
     if (valPCLoopD >= 90 && valPCLoopD <= 99) {
       displayNum(9, valPCLoopD - 90);
     }

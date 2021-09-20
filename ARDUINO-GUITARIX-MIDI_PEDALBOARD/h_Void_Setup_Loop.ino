@@ -1,8 +1,8 @@
 
 void setup() {
-  MIDI.begin(MIDI_CHANNEL_OMNI); //MIDI_CHANNEL_OMNI= Lee los mensajes de todos los Canales, si esta vacio solo lee el Canal 1 en MIDI IN.
+  MIDI.begin(MIDI_CHANNEL_OMNI); //MIDI_CHANNEL_OMNI= Lee los mensajes de todos los Canales, si está vacío solo lee el Canal 1 en MIDI IN.
 #if USE_MIDI_DIN_CONNECTOR_OR_HIDUINO
-  Serial.begin(31250); // Si conecta Arduino mediante conector MIDI DIN a algun rack o pedal con Midi Input, o si usa Arduino con 16u2 y Firmware Hiduino o similar.
+  Serial.begin(31250); // Si conecta Arduino mediante conector MIDI DIN a algún rack o pedal con Midi Input, o si usa Arduino con 16u2 y Firmware Hiduino o similar.
 #elif USE_USBMIDI || USE_ESP32BluetoothBLE
 #else
   Serial.begin(115200); // Si conecta Arduino por comunicación serial a la PC (Chip FTDI232 o Ch340).
@@ -15,9 +15,9 @@ void setup() {
   MIDI.setHandleProgramChange(MIDI_Input_ProgramChange);  //MIDI Input ProgramChange ver "Void MIDI_Input".
 
 #if USE_USBMIDI || USE_ESP32BluetoothBLE
-  MIDI.turnThruOn();  //En biblioteca USB-MIDI/BLEEMIDI, MIDI-Thru esta desactivado por defecto: https://github.com/lathoub/Arduino-USBMIDI
+  MIDI.turnThruOn();  //En biblioteca USB-MIDI/BLEEMIDI, MIDI-Thru está desactivado por defecto: https://github.com/lathoub/Arduino-USBMIDI
 #else
-  //MIDI.turnThruOff();//Evita que la señales que entran vuelvan a salir, en libreria MIDI, MIDI-Thru esta activado por defecto.
+  //MIDI.turnThruOff();//Evita que la señales que entran vuelvan a salir, en librería MIDI, MIDI-Thru está activado por defecto.
 #endif
 
 #endif
@@ -147,9 +147,9 @@ void setup() {
   MIDI.sendControlChange(0, 0, Ch);  //Inicia en Banco = 0- MIDI.sendControlChange(CCBank, valBank, ch); CC=0 es MSB, CC=32 es LSB.
   MIDI.sendProgramChange(0, Ch);     //Inicia en el Preset 0.
   //delay(100);
-  //MIDI.sendControlChange(1, valOn, Ch); //Trabaja con Noise Repellent con Noise_Learn- Al iniciarse la pedalera envia un CC1 con Valor ON para iniciar la lectura de ruido por 100ms (delay). Se coloca esta linea aqui para que se ejecute solo una vez al inicio.
+  //MIDI.sendControlChange(1, valOn, Ch); //Trabaja en Noise Repellent con Noise_Learn (usando mod-host en vez de Jalv). Al iniciarse la pedalera envía un CC1 con Valor ON para iniciar la lectura de ruido por 100ms (delay). Se coloca esta línea aquí para que se ejecute solo una vez al inicio.
   //delay(100);
-  //MIDI.sendControlChange(1, valOff, Ch); // Luego de 100ms se apaga la toma de muestra de Ruido con un Valor OFF.
+  //MIDI.sendControlChange(1, valOff, Ch); // Luego de 100ms se apaga la toma de muestra de ruido con un Valor OFF.
 }
 
 void loop() {
@@ -161,7 +161,7 @@ void loop() {
   MIDI.read();  //Lee los mensajes MIDI entrantes de todos los Canales, si quiere leer solo el Canal 1 = MIDI.read(1)
 #endif
   SwitchButton();
-  Pedal1();  //Llama a las funciones "void" para ser ejecutadas aqui.
+  Pedal1();  //Llama a las funciones "void" para ser ejecutadas aquí.
   Pedal2();
   Pedal3();
   Pedal4();
