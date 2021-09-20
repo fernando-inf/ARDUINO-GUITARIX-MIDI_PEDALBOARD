@@ -141,6 +141,10 @@ Si usa Hairless-Midiserial (en formato compilado solo está disponible para sist
 
 Tenga la gentileza de informarme sobre los avances significativos que haga usted en el proyecto y de enviarme fotos de su versión de esta pedalera.
 
-fernando-inf@hotmail.com
+# DONACIONES
+
+Si considera util este aporte a la comunidad, puede realizar una donación mediante PAYPAL para continuar con el desarrollo de Software Libre:
+
+email Paypal: fernando-inf@hotmail.com
 
 2021 @CopyLeft
