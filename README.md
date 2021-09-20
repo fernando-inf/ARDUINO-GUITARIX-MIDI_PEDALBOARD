@@ -24,24 +24,24 @@ https://github.com/fernando-inf/ARDUINO-GUITARIX-MIDI_PEDALBOARD
 
   Previamente deberá tener instaladas estas librerías, para esto dirigirse a Arduino IDE "Herramientas ->   Administrar Bibliotecas..." y buscarlas:
   
-  - Bounce2: https://github.com/thomasfredericks/Bounce2
+  - [Bounce2](https://github.com/thomasfredericks/Bounce2)
   
-  - MIDI Library: https://github.com/FortySevenEffects/arduino_midi_library
+  - [MIDI Library](https://github.com/FortySevenEffects/arduino_midi_library)
   
-  - Si usa USB-MIDI: Arudino USB-MIDI https://github.com/lathoub/Arduino-USBMIDI
+  - Si usa USB-MIDI: [Arudino USB-MIDI](https://github.com/lathoub/Arduino-USBMIDI)
   
   - Si usa Bluetooth con ESP32: 
   
-      - Pack de tarjetas adicionales ESP32 https://dl.espressif.com/dl/package_esp32_index.json
+      - [Pack de tarjetas adicionales ESP32](https://dl.espressif.com/dl/package_esp32_index.json)
                                 
-      - Arduino BLE MIDI https://github.com/lathoub/Arduino-BLE-MIDI 
+      - [Arduino BLE MIDI](https://github.com/lathoub/Arduino-BLE-MIDI)
                                 
   
-  - Si usa LCD 16x2: LiquidCrystal https://www.arduino.cc/en/Reference/LiquidCrystal
+  - Si usa LCD 16x2: [LiquidCrystal](https://www.arduino.cc/en/Reference/LiquidCrystal)
   
-  - Si usa LCD 16x2 con I2C: LiquidCrystal_I2C https://github.com/johnrickman/LiquidCrystal_I2C
+  - Si usa LCD 16x2 con I2C: [LiquidCrystal_I2C](https://github.com/johnrickman/LiquidCrystal_I2C)
   
-  - Si usa OLED SSD1306 128x64 I2C: U8g2 https://github.com/olikraus/u8g2
+  - Si usa OLED SSD1306 128x64 I2C: [U8g2](https://github.com/olikraus/u8g2)
   
 - Habilíte su configuración con un valor = 1.
 
@@ -64,11 +64,11 @@ https://github.com/fernando-inf/ARDUINO-GUITARIX-MIDI_PEDALBOARD
 - El Pulsador que está en el sector medio superior del pedal y que a la misma vez contiene un LED azul cambia de MODO BANCO, INDIVIDUAL y LOOP/DRUM, también lo    hace el Pedal 1 si lo mantiene presionado por más de medio segundo.
 - MODO BANCO (Canal MIDI 1): El Pedal 1 Decrementa el Valor de Banco y el Pedal 2 lo Incrementa. Los Pedales del 3 al 6 representan a un Preset A-B-C-D.
 - MODO INDIVIDUAL (Canal MIDI 1): Los Pedales 1 al 6 efectúan el encendido y apagado de efectos.
-- MODO LOOP/DRUM (Canal MIDI 2): El Pedal 1 y 2 suben y bajan de sample/pattern drum (usar Hydrogen https://github.com/hydrogen-music/hydrogen), el Pedal 3 puede ser asignado para activar/desactivar el sample drum. El pedal 4 puede servir como TAP del programa de batería y loop, el pedal 5 para grabar el loop (usar Sooperlooper https://github.com/essej/sooperlooper) y el Pedal 6 para Pause/Stop del mismo.
+- MODO LOOP/DRUM (Canal MIDI 2): El Pedal 1 y 2 suben y bajan de sample/pattern drum (usar [Hydrogen](https://github.com/hydrogen-music/hydrogen)), el Pedal 3 puede ser asignado para activar/desactivar el sample drum. El pedal 4 puede servir como TAP del programa de batería y loop, el pedal 5 para grabar el loop (usar [Sooperlooper](https://github.com/essej/sooperlooper)) y el Pedal 6 para Pause/Stop del mismo.
 - La Pedalera inicia en MODO BANCO en el Banco 0 y Preset 0 (A), sin embargo queda a la espera (LEDs Parpadeando) de la confirmación de selección de preset. Usted debe confirmar el preset antes de pasar el MODO INDIVIDUAL ya que, los LEDs seguirán parpadeando impidiendo el correcto funcionamiento de este MODO. Además, con cada pulsación de los Pedales 1 y 2 los LEDs volverán a Parpadear y, usted deberá necesariamente confirmar el preset.
 
 Simulación:
-Descargue la ultima versión SimulIDE que incluye soporte para Arduino: https://www.simulide.com/p/downloads.html
+Descargue la ultima versión [SimulIDE](https://www.simulide.com/p/downloads.html) que incluye soporte para Arduino.
 
 Abrir el archivo SIMULIDE-PedalBoardMIDI.simu que se encuentra en la carpeta del proyecto. De no iniciar la simulación haga click derecho sobre la placa Arduino y LOAD FIRMWARE, luego seleccione alguno de los archivos con extensión HEX que están en la carpeta principal del proyecto.
 
@@ -84,7 +84,7 @@ Abrir el archivo CON EXTENSIÓN ".skp" que se encuentra en la carpeta Miscellane
 # MATERIALES
 Este proyecto pretende usar materiales reciclados, quien escribe no responde por los daños económicos que puedan causar los detalles descriptos en este apartado:
 
-1- Arduino Nano u otra placa programable con Arduino IDE y con disponibilidad de 17 pines digitales: la conexión a la PC se hace por USB, luego usar ttymidi (en GNU/Linux https://github.com/moddevices/mod-ttymidi es fácil de compilar) para simular un puerto MIDI (o Hairless MIDI to Serial).
+1- Arduino Nano u otra placa programable con Arduino IDE y con disponibilidad de 17 pines digitales: la conexión a la PC se hace por USB, luego usar [ttymidi](https://github.com/fernando-inf/mod-ttymidi) (en GNU/Linux es fácil de compilar) para simular un puerto MIDI (o Hairless MIDI to Serial).
 
 2- Perfil de Chapa Galvanizada de 40,5 x 9,7 cm (Los suelen tirar en la obras de construcción): Si se lija se puede lograr hasta un brillo espejo, pero suele oxidarse fácilmente y requiere de constante mantenimiento.
 
@@ -115,7 +115,7 @@ Porcelana fría: para dar forma al soporte de los LEDs en la parte interior del 
 
 - La Chapa fina de lata de gaseosa mencionada en la sección  "Materiales", no ha sido probada en este proyecto (se uso otra placa antigua que se tenia disponible). Se puede notar que tiene mucha flexibilidad y se parte fácilmente al doblarla completamente, sin embargo es viable probarla ya que parece ser una buena alternativa de fácil disponibilidad.
 
-- Considere usar Noise Repellent como Reductor de Ruido (No es puerta de Ruido): https://github.com/lucianodato/noise-repellent, si bien provoca latencia, vale la pena probarlo.
+- Considere usar [Noise Repellent](https://github.com/lucianodato/noise-repellent) como Reductor de Ruido (No es puerta de Ruido), si bien provoca latencia, vale la pena probarlo.
 
 - MIDI DIN CONNECTOR: Si usted usará conexión MIDI mediante conector MIDI DIN a un rack o pedal externo, necesitará elaborar un circuito eléctrico adicional, especialmente para la recepción de mensajes MIDI por parte de Arduino. Existen diagramas de ejemplos en la web, búsquelos.
 
