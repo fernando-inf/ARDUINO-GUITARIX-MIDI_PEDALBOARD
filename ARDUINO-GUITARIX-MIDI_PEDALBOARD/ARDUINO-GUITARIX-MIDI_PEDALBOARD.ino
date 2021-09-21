@@ -26,6 +26,7 @@
 
 #define USE_MIDI_DIN_CONNECTOR_OR_HIDUINO 0  //Si conecta Arduino mediante conector MIDI DIN a algún rack o pedal con Midi Input, o si usa Arduino con 16u2 y Firmware Hiduino o similar = 1, de lo contrario 0.
 #define NO_USE_MIDI_INPUT                 0  //Si su PC o equipo (Rack, Pedal... ) no enviará señales MIDI a Arduino = 1, de lo contrario 0.
+#define USE_MIDI_THRU                     1  //Si quiere que las señales MIDI Input vuelvan a salir por MIDI Output = 1, de lo contrario 0. En Guitarix es necesario MIDI Thru para resolver este conflicto: https://github.com/brummer10/guitarix/issues/80 . Advertencia: En ocasiones puede provocar un bucle infinito de entradas y salidas de señales MIDI.
 //*****************************************
 
 #include <Bounce2.h>  //https://github.com/thomasfredericks/Bounce2

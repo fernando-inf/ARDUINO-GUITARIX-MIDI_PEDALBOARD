@@ -9,18 +9,24 @@ void setup() {
 #endif
 
 #if NO_USE_MIDI_INPUT
-  MIDI.turnThruOff();
 #else
   MIDI.setHandleControlChange(MIDI_Input_CC); //MIDI Input ControlChange ver "Void MIDI_Input".
   MIDI.setHandleProgramChange(MIDI_Input_ProgramChange);  //MIDI Input ProgramChange ver "Void MIDI_Input".
+#endif
 
+//*****************
+#if USE_MIDI_THRU //ver: https://github.com/brummer10/guitarix/issues/80
 #if USE_USBMIDI || USE_ESP32BluetoothBLE
   MIDI.turnThruOn();  //En biblioteca USB-MIDI/BLEEMIDI, MIDI-Thru está desactivado por defecto: https://github.com/lathoub/Arduino-USBMIDI
 #else
-  //MIDI.turnThruOff();//Evita que la señales que entran vuelvan a salir, en librería MIDI, MIDI-Thru está activado por defecto.
 #endif
-
+#else
+#if USE_USBMIDI || USE_ESP32BluetoothBLE
+#else
+  MIDI.turnThruOff();//Evita que la señales que entran vuelvan a salir, en librería MIDI, MIDI-Thru está activado por defecto.
 #endif
+#endif
+//*****************
 
 #if USE_ESP32BluetoothBLE
   BLEMIDI.setHandleConnected(OnConnected); //Enciende LED cuando el Dispositivo se ha conectado por Bluetooth.
