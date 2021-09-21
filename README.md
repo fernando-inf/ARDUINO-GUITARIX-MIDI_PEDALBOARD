@@ -2,6 +2,8 @@
 
 https://www.gnu.org/
 
+https://guitarix.org/
+
 https://github.com/fernando-inf/ARDUINO-GUITARIX-MIDI_PEDALBOARD
 
 # ARDUINO/GUITARIX- MIDI PEDALBOARD 
