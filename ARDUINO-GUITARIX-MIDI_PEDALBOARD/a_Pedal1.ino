@@ -11,6 +11,8 @@ void Pedal1() {
         if (tgSt[0] > tgSt_0_Max) tgSt[0] = 0;
         //MODO BANCO
         if (tgSt[0] == 0) {
+          digitalWrite(LED[1], LOW);
+          
           digitalWrite(LED[0], LOW);
           LCD_OLED();
           LEDBank_Preset();

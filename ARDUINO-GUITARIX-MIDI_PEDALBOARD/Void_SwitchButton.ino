@@ -9,6 +9,8 @@ void SwitchButton() {  //Cambio de MODO.
 
     //MODO BANCO
     if (tgSt[0] == 0) {
+      digitalWrite(LED[1], LOW);
+      
       digitalWrite(LED[0], LOW);  //APAGAR Primer LED = Indica encendido de MODO BANCO
       LCD_OLED(); //Escribe en el LCD/OLED.
       LEDBank_Preset(); //LEDs indicadores de BANCO y PRESET. Ver pestaña "VoidLEDBank_Preset"
@@ -16,6 +18,8 @@ void SwitchButton() {  //Cambio de MODO.
 
     //MODO INDIVIDUAL
     else if (tgSt[0] == 1) {
+      digitalWrite(LED[1], LOW);
+      
       digitalWrite(LED[0], HIGH);  //ENCENDER Primer LED = Indica encendido de MODO INDIVIDUAL
       LCD_OLED();                  //Escribe en el LCD/OLED.
 #if NO_USE_MIDI_INPUT
@@ -43,6 +47,8 @@ void SwitchButton() {  //Cambio de MODO.
     }
     //MODO LOOPD
     else if (tgSt[0] == 2) {
+      digitalWrite(LED[1], LOW);
+      
       LCD_OLED();  //Escribe en el LCD/OLED.
     }
   }
