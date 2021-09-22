@@ -88,30 +88,31 @@ Abrir el archivo CON EXTENSIÓN ".skp" que se encuentra en la carpeta Miscellane
 # MATERIALES
 Este proyecto pretende usar materiales reciclados, quien escribe no responde por los daños económicos que puedan causar los detalles descriptos en este apartado:
 
-1- Arduino Nano u otra placa programable con Arduino IDE y con disponibilidad de 17 pines digitales: la conexión a la PC se hace por USB, luego usar [ttymidi](https://github.com/fernando-inf/mod-ttymidi) (en GNU/Linux es fácil de compilar) para simular un puerto MIDI (o Hairless MIDI to Serial).
+1. Arduino Nano u otra placa programable con Arduino IDE y con disponibilidad de 17 pines digitales: la conexión a la PC se hace por USB, luego usar [ttymidi](https://github.com/fernando-inf/mod-ttymidi) (en GNU/Linux es fácil de compilar) para simular un puerto MIDI (o Hairless MIDI to Serial).
 
-2- Perfil de Chapa Galvanizada de 40,5 x 9,7 cm (Los suelen tirar en la obras de construcción): Si se lija se puede lograr hasta un brillo espejo, pero suele oxidarse fácilmente y requiere de constante mantenimiento.
+2. Perfil de Chapa Galvanizada de 40,5 x 9,7 cm (Los suelen tirar en la obras de construcción): Si se lija se puede lograr hasta un brillo espejo, pero suele oxidarse fácilmente y requiere de constante mantenimiento.
 
-3- Tubo PVC 110x2,5 mm (se corta y da la forma del pedal con calor, por ejemplo con una plancha para ropa)
+3. Tubo PVC 110x2,5 mm (se corta y da la forma del pedal con calor, por ejemplo con una plancha para ropa)
 
-4- Un retazo de madera para dar la forma interna del pedal (lijando), se usará para moldear el PVC.
+4. Un retazo de madera para dar la forma interna del pedal (lijando), se usará para moldear el PVC.
 
-5- Chapa fina (puede ser de lata de gaseosa o cerveza, lijar pintura para asegurarse de que conducirá energía) que se pegará (con Cianoacrilato – Gotita en algunos países) por encima del PVC y conducirá la señal Digital de los Pines. Esta chapa chocará con el perfil de metal (punto 2) que conducirá GND y así encenderá y apagará el Pedal. Si pinta el perfil de metal entonces tendrá que, colocar otra chapa fina por debajo del pedal de PVC que conducirá el GND para que puede tomar contacto con la señal digital.
+5. Chapa fina (puede ser de lata de gaseosa o cerveza, lijar pintura para asegurarse de que conducirá energía) que se pegará (con Cianoacrilato – Gotita en algunos países) por encima del PVC y conducirá la señal Digital de los Pines. Esta chapa chocará con el perfil de metal (punto 2) que conducirá GND y así encenderá y apagará el Pedal. Si pinta el perfil de metal entonces tendrá que, colocar otra chapa fina por debajo del pedal de PVC que conducirá el GND para que puede tomar contacto con la señal digital.
 
-6- 10 LEDs. (para los Pedales se usaron LEDs Blancos provenientes de una Luz de Emergencia en desuso, para el resto se usaron LEDs azules de mouse óptico y Joystick de PS2)
+6. 10 LEDs. (para los Pedales se usaron LEDs Blancos provenientes de una Luz de Emergencia en desuso, para el resto se usaron LEDs azules de mouse óptico y Joystick de PS2)
 
-7- Resistencias 220ohms (o mayor valor si no tiene disponibles estas), puede colocar o no estas resistencias a los LEDS (entre la salida del PIN digital de Arduino y el LED), en general es recomendable colocarlas pero, si tiene muchos LEDs para reciclar puede probar esto: si los LEDs calientan coloque resistencias, de lo contrario no serían necesarias.
+7. Resistencias 220ohms (o mayor valor si no tiene disponibles estas), puede colocar o no estas resistencias a los LEDS (entre la salida del PIN digital de Arduino y el LED), en general es recomendable colocarlas pero, si tiene muchos LEDs para reciclar puede probar esto: si los LEDs calientan coloque resistencias, de lo contrario no serían necesarias.
 
-8- Un pulsador de CPU que se usara para el cambio entre MODO BANCO y MODO INDIVIDUAL.
+8. Un pulsador de CPU que se usara para el cambio entre MODO BANCO y MODO INDIVIDUAL.
 
-9- 12 Tornillos (con tuercas) de 3 milímetros de diámetro por 8mm de largo aprox.: se usaran para ajustar los pedales al perfil de metal, tenían un costo de AR$2 en el primer trimestre del 2021.
+9. 12 Tornillos (con tuercas) de 3 milímetros de diámetro por 8mm de largo aprox.: se usaran para ajustar los pedales al perfil de metal, tenían un costo de AR$2 en el primer trimestre del 2021.
 
-10- Herramientas (caladora de mano o eléctrica, taladro, lijadora, limas, etc.), lijas distintos granos y mechas para taladro de distintas medidas.
+10. Herramientas (caladora de mano o eléctrica, taladro, lijadora, limas, etc.), lijas distintos granos y mechas para taladro de distintas medidas.
 
--Otros- Alternativamente puede usar: 
-Conector USB tipo B: reciclado de impresora o modem para no conectar directamente Arduino a la PC. 
-Switch (on/off): reciclado de un Hub USB para encender y apagar la pedalera.
-Porcelana fría: para dar forma al soporte de los LEDs en la parte interior del perfil de chapa galvanizada.
+11. Alternativamente puede usar: 
+    - Conector USB tipo B: reciclado de impresora o modem para no conectar directamente Arduino a la PC. 
+    - Switch (on/off): reciclado de un Hub USB para encender y apagar la pedalera.
+    - Porcelana fría: para dar forma al soporte de los LEDs en la parte interior del perfil de chapa galvanizada.
+
 <img src="https://raw.githubusercontent.com/fernando-inf/ARDUINO-GUITARIX-MIDI_PEDALBOARD/main/ARDUINO-GUITARIX-MIDI_PEDALBOARD/Miscellanea/PedalBoardMIDI-5.png" width="100%"></img> 
 
 # ADVERTENCIAS/ACLARACIONES
