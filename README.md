@@ -119,11 +119,11 @@ Porcelana fría: para dar forma al soporte de los LEDs en la parte interior del 
 
 - ESP32: No se recomienda aun usar la versión Bluetooth con ESP32 ya que no es posible usar Display ni LEDs para mostrar información del estado de Bancos y Presets. 
 
+- MIDI DIN CONNECTOR: Si usted usará conexión MIDI mediante conector MIDI DIN a un rack o pedal externo, necesitará elaborar un circuito eléctrico adicional, especialmente para la recepción de mensajes MIDI por parte de Arduino. Existen diagramas de ejemplos en la web, búsquelos.
+
 - La Chapa fina de lata de gaseosa mencionada en la sección  "Materiales", no ha sido probada en este proyecto (se uso otra placa antigua que se tenia disponible). Se puede notar que tiene mucha flexibilidad y se parte fácilmente al doblarla completamente, sin embargo es viable probarla ya que parece ser una buena alternativa de fácil disponibilidad.
 
 - Considere usar [Noise Repellent](https://github.com/lucianodato/noise-repellent) como Reductor de Ruido (No es puerta de Ruido), si bien provoca latencia, vale la pena probarlo.
-
-- MIDI DIN CONNECTOR: Si usted usará conexión MIDI mediante conector MIDI DIN a un rack o pedal externo, necesitará elaborar un circuito eléctrico adicional, especialmente para la recepción de mensajes MIDI por parte de Arduino. Existen diagramas de ejemplos en la web, búsquelos.
 
 # OTRA INFORMACIÓN
 Abra el archivo ARDUINO-GUITARIX-MIDI_PEDALBOARD.ino con Arduino IDE. En la primer pestaña encontrará los pines asignados a LEDs y Pedales. Todos los Pines y señales MIDI CC son modificables pero, no realice ningún cambio sin antes hacer una copia de los archivos. Puede usar simuladores (SimulIDE) y el Debug de Hairless MIDI to Serial para probar los cambios que realice.
