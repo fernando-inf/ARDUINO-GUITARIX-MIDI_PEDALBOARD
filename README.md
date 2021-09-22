@@ -98,11 +98,11 @@ Este proyecto pretende usar materiales reciclados, quien escribe no responde por
 
 5. Chapa fina (puede ser de lata de gaseosa o cerveza, lijar pintura para asegurarse de que conducirá energía) que se pegará (con Cianoacrilato – Gotita en algunos países) por encima del PVC y conducirá la señal Digital de los Pines. Esta chapa chocará con el perfil de metal (punto 2) que conducirá GND y así encenderá y apagará el Pedal. Si pinta el perfil de metal entonces tendrá que, colocar otra chapa fina por debajo del pedal de PVC que conducirá el GND para que puede tomar contacto con la señal digital.
 
-6. 10 LEDs. (para los Pedales se usaron LEDs Blancos provenientes de una Luz de Emergencia en desuso, para el resto se usaron LEDs azules de mouse óptico y Joystick de PS2)
+6. 6 Leds para los pedales, 1 Led para el SwitchButton, 4 leds para mostrar la informacion del estado de los Bancos (si es que usa este opción). (para los Pedales se usaron LEDs Blancos provenientes de una Luz de Emergencia en desuso, para el resto se usaron LEDs azules de mouse óptico y Joystick de PS2)
 
 7. Resistencias 220ohms (o mayor valor si no tiene disponibles estas), puede colocar o no estas resistencias a los LEDS (entre la salida del PIN digital de Arduino y el LED), en general es recomendable colocarlas pero, si tiene muchos LEDs para reciclar puede probar esto: si los LEDs calientan coloque resistencias, de lo contrario no serían necesarias.
 
-8. Un pulsador de CPU que se usara para el cambio entre MODO BANCO y MODO INDIVIDUAL.
+8. Un pulsador de CPU que se usara para el Switch Button.
 
 9. 12 Tornillos (con tuercas) de 3 milímetros de diámetro por 8mm de largo aprox.: se usaran para ajustar los pedales al perfil de metal, tenían un costo de AR$2 en el primer trimestre del 2021.
 
