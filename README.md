@@ -134,11 +134,11 @@ Abra el archivo ARDUINO-GUITARIX-MIDI_PEDALBOARD.ino con Arduino IDE. En la prim
 
 Ver la simulación en SimulIDE para entender mejor la asignación de Pines:
 
-`byte buttonPin[] = {2, 3, 4, 5, 6, 7, 8}; //{D2, D3,.........,D8} //Pines Digitales`
+`byte buttonPin[] = {2, 3, 4, 5, 6, 7, 8}; //Pines Digitales pulsadores`
 
-`const byte LED[] = {9, 10, 11, 12, 13, A0, A1,A2, A3, A4, A5}; //Pines Digitales`
+`const byte LED[] = {9, 10, 11, 12, 13, A0, A1,A2, A3, A4, A5}; //Pines Digitales Leds`
 
-`const byte CC[] = {51, 52, 53, 54, 55, 56}; //Número de Control Change para cada pedal.`
+`const byte CC[] = {51, 52, 53, 54, 55, 56}; //Número de Control Change (MIDI CC) para cada pedal.`
   
 Si usa ttymidi en GNU/Linux, desargue y compile desde aquí: https://github.com/fernando-inf/mod-ttymidi
 
