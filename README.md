@@ -121,7 +121,7 @@ Este proyecto pretende usar materiales reciclados, quien escribe no responde por
 # ADVERTENCIAS/ACLARACIONES
 - MIDI TRHU: Luego de hacer pruebas exhaustivas se puede decir que: Si usted en Guitarix añadió un efecto, luego le asigno un MIDI CC y luego quito este efecto: es recomendable eliminar el MIDI CC asignado en la pestaña Motor-> Controlador MIDI. Así, se determino que se evita un bucle infinito de entradas y salidas de señales MIDI (si usted no elimina el CC asignado, Guitarix continuará enviando la señal MIDI, repetidas veces) ya que el Código de este PedalBoard habilita MIDI THRU para la correcta actualización de los preset con cada cambio de los mismos. Si se envían señales repetidas de un mismo MIDI CC se produce el bucle infinito (ver: https://github.com/brummer10/guitarix/issues/80).
 
-      - Apartir de versiones de GuitarIX descargadas y compiladas luego del 23/09/2021 ya no es necesario habilitar MIDI TRHU en el código: https://github.com/brummer10/guitarix/issues/85 . 
+     - Apartir de versiones de GuitarIX descargadas y compiladas luego del 23/09/2021 ya no es necesario habilitar MIDI TRHU en el código: https://github.com/brummer10/guitarix/issues/85 . 
 
 - ESP32: No se recomienda aun usar la versión Bluetooth con ESP32 ya que no es posible usar Display ni LEDs para mostrar información del estado de Bancos y Presets. 
 
