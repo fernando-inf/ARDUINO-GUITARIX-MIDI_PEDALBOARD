@@ -134,9 +134,11 @@ Este proyecto pretende usar materiales reciclados, quien escribe no responde por
 # OTRA INFORMACIÓN
 - ASIGNACIÓN DE PINES Y MIDI CC: Abra el archivo ARDUINO-GUITARIX-MIDI_PEDALBOARD.ino con Arduino IDE. En la primer pestaña encontrará los pines asignados a LEDs y Pedales. Todos los Pines y señales MIDI CC son modificables pero, no realice ningún cambio sin antes hacer una copia de los archivos. Puede usar simuladores (SimulIDE) y el Debug de Hairless MIDI to Serial para probar los cambios que realice.
 Ver la simulación en SimulIDE para entender mejor la asignación de Pines:
-`byte buttonPin[] = {2, 3, 4, 5, 6, 7, 8}; //Pines Digitales pulsadores`
-`const byte LED[] = {9, 10, 11, 12, 13, A0, A1,A2, A3, A4, A5}; //Pines Digitales Leds`
-`const byte CC[] = {51, 52, 53, 54, 55, 56}; //Número de Control Change (MIDI CC) para cada pedal.`
+ `byte buttonPin[] = {2, 3, 4, 5, 6, 7, 8}; //Pines Digitales pulsadores`
+
+ `const byte LED[] = {9, 10, 11, 12, 13, A0, A1,A2, A3, A4, A5}; //Pines Digitales Leds`
+
+ `const byte CC[] = {51, 52, 53, 54, 55, 56}; //Número de Control Change (MIDI CC) para cada pedal.`
   
 - TTYMIDI: Si usa ttymidi en GNU/Linux, desargue y compile desde aquí: https://github.com/fernando-inf/mod-ttymidi
 Recuerde que ttymidi solo se iniciará (comando `ttymidi` en terminal) si conecto previamente Arduino al puerto usb. Así mismo verifique que previamente no ha quedado abierta otra instancia de ttymidi, de ser así, ciérrela en su Gestor/Administrador de tareas.
