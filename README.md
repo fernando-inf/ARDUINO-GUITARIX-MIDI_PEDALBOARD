@@ -132,7 +132,7 @@ Este proyecto pretende usar materiales reciclados, quien escribe no responde por
 - Considere usar [Noise Repellent](https://github.com/lucianodato/noise-repellent) como Reductor de Ruido (No es puerta de Ruido), si bien provoca latencia, vale la pena probarlo.
 
 # OTRA INFORMACIÓN
-Abra el archivo ARDUINO-GUITARIX-MIDI_PEDALBOARD.ino con Arduino IDE. En la primer pestaña encontrará los pines asignados a LEDs y Pedales. Todos los Pines y señales MIDI CC son modificables pero, no realice ningún cambio sin antes hacer una copia de los archivos. Puede usar simuladores (SimulIDE) y el Debug de Hairless MIDI to Serial para probar los cambios que realice.
+- ASIGNACIÓN DE PINES Y MIDI CC: Abra el archivo ARDUINO-GUITARIX-MIDI_PEDALBOARD.ino con Arduino IDE. En la primer pestaña encontrará los pines asignados a LEDs y Pedales. Todos los Pines y señales MIDI CC son modificables pero, no realice ningún cambio sin antes hacer una copia de los archivos. Puede usar simuladores (SimulIDE) y el Debug de Hairless MIDI to Serial para probar los cambios que realice.
 
 Ver la simulación en SimulIDE para entender mejor la asignación de Pines:
 
