@@ -142,11 +142,10 @@ Ver la simulación en SimulIDE para entender mejor la asignación de Pines:
 
 `const byte CC[] = {51, 52, 53, 54, 55, 56}; //Número de Control Change (MIDI CC) para cada pedal.`
   
-Si usa ttymidi en GNU/Linux, desargue y compile desde aquí: https://github.com/fernando-inf/mod-ttymidi
-
+- TTYMIDI: Si usa ttymidi en GNU/Linux, desargue y compile desde aquí: https://github.com/fernando-inf/mod-ttymidi
 Recuerde que ttymidi solo se iniciará (comando `ttymidi` en terminal) si conecto previamente Arduino al puerto usb. Así mismo verifique que previamente no ha quedado abierta otra instancia de ttymidi, de ser así, ciérrela en su Gestor/Administrador de tareas.
 
-Si usa Hairless-Midiserial (en formato compilado solo está disponible para sistemas operativos de 32 bits en GNU/Linux, tendrá que instalar librerías adicionales para usarlo en sistemas de 64bits) habilite la linea `MIDI.turnThruOff()` en la pestaña SETUP;
+- HAIRLESS-MIDISERIAL: Si usa Hairless-Midiserial (en formato compilado solo está disponible para sistemas operativos de 32 bits en GNU/Linux, tendrá que instalar librerías adicionales para usarlo en sistemas de 64bits) no habilite MIDI THRU.
 
 
 Tenga la gentileza de informarme sobre los avances significativos que haga usted en el proyecto y de enviarme fotos de su versión de esta pedalera.
