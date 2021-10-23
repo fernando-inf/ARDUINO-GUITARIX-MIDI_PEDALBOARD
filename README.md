@@ -13,7 +13,6 @@ https://github.com/fernando-inf/ARDUINO-GUITARIX-MIDI_PEDALBOARD
 - English Version (Google translator): [ARDUINO/GUITARIX- MIDI PEDALBOARD](https://github-com.translate.goog/fernando-inf/ARDUINO-GUITARIX-MIDI_PEDALBOARD?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=es-419&_x_tr_pto=nui,elem)
 - Para reportar errores (Bugs) o solicitar ayuda [Registrarse en Github](https://github.com/signup?source=login) y dirijirse a la pestaña "Issues" que esta en la parte superior izquierda del repositorio.
 - Para conocer a Guitarix mirar este video: [Tutorial Guitarix](https://youtu.be/nPbhc_3uhjE)
-- Colaboraciones/Donaciones se reciben mediante Paypal al e-mail: fernando-inf@hotmail.com
 
 <img src="https://raw.githubusercontent.com/fernando-inf/ARDUINO-GUITARIX-MIDI_PEDALBOARD/main/ARDUINO-GUITARIX-MIDI_PEDALBOARD/Miscellanea/PedalBoardMIDI-6.png" width="100%"></img> 
 <img src="https://raw.githubusercontent.com/fernando-inf/ARDUINO-GUITARIX-MIDI_PEDALBOARD/main/ARDUINO-GUITARIX-MIDI_PEDALBOARD/Miscellanea/PedalBoardMIDI-7.png" width="100%"></img>
