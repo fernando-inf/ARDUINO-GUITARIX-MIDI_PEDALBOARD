@@ -24,6 +24,7 @@ https://github.com/fernando-inf/ARDUINO-GUITARIX-MIDI_PEDALBOARD
 <img src="https://raw.githubusercontent.com/fernando-inf/ARDUINO-GUITARIX-MIDI_PEDALBOARD/main/ARDUINO-GUITARIX-MIDI_PEDALBOARD/Arduino_MEGA-%20LCD16x2/SIMULIDE-PedalBoardMIDI-MEGA.png" width="100%"></img> 
 <img src="https://raw.githubusercontent.com/fernando-inf/ARDUINO-GUITARIX-MIDI_PEDALBOARD/main/ARDUINO-GUITARIX-MIDI_PEDALBOARD/Arduino_Nano-Display7Segment/SIMULIDE-PedalBoardMIDI.png" width="100%"></img> 
 # INSTALACIÓN DEL FIRMWARE
+
 - Abrir el archivo ARDUINO-GUITARIX-MIDI_PEDALBOARD.ino con Arduino IDE.
 
 - Instále las dependencias:
@@ -56,6 +57,7 @@ https://github.com/fernando-inf/ARDUINO-GUITARIX-MIDI_PEDALBOARD
 - Compilar y subir el código a su placa de desarrollo.
 
 # SOPORTE DE PLACAS DE DESARROLLO
+
 - Si para mostrar los datos de número de banco y preset usa:
   - LEDs: Arduino Mega, Uno, Nano, Leonardo.
   - Display 7 Segmentos 2 dígitos con chip- SIEMENS SDA2131 (16bits) o 74HC595 x 2 (8bits + 8bits): Arduino Mega, Uno, Nano, Leonardo.
@@ -67,10 +69,19 @@ https://github.com/fernando-inf/ARDUINO-GUITARIX-MIDI_PEDALBOARD
 - Si usa Bluetooth: ESP32 (Por una cuestión de limitación de pines no puede mostrar los datos de número de banco y preset)
   
 # FUNCIONAMIENTO
-- El Pulsador que está en el sector medio superior del pedal y que a la misma vez contiene un LED azul cambia de MODO BANCO, INDIVIDUAL y LOOP/DRUM, también lo    hace el Pedal 1 si lo mantiene presionado por más de medio segundo.
+
+- PULSADOR CENTRAL: El Pulsador que está en el sector medio superior del pedal y que a la misma vez contiene un LED azul cambia a MODO BANCO, INDIVIDUAL, LOOP/DRUM y TUNER.
+
 - MODO BANCO (Canal MIDI 1): El Pedal 1 Decrementa el Valor de Banco y el Pedal 2 lo Incrementa. Los Pedales del 3 al 6 representan a un Preset A-B-C-D.
+
 - MODO INDIVIDUAL (Canal MIDI 1): Los Pedales 1 al 6 efectúan el encendido y apagado de efectos.
+
 - MODO LOOP/DRUM (Canal MIDI 2): El Pedal 1 y 2 suben y bajan de sample/pattern drum (usar [Hydrogen](https://github.com/hydrogen-music/hydrogen)), el Pedal 3 puede ser asignado para activar/desactivar el sample drum. El pedal 4 puede servir como TAP del programa de batería y loop, el pedal 5 para grabar el loop (usar [Sooperlooper](https://github.com/essej/sooperlooper)) y el Pedal 6 para Pause/Stop del mismo.
+
+- MODO TUNER (Canal MIDI 1): Los LEDs de los pedales muestran el balanceo de las notas, al llegar al LED central la cuerda está afinada (esto sucede cuando el Valor de "Velocity" recibido en la Pedalera esta entre 62 y 64), las notas se muestran en el Display (solo con Display 7 segmentos, LCD u OLED). Al pasar a este Modo, se envía una señal MIDI CC 118 para encender el Afinador (usted deberá asignar este MIDI CC en el programa), al salir del Modo se envía una señal MIDI de apagado. Cuando las cuerdas no son pulsadas la Pedalera deja de mostrar datos en el Display si se recibe un MIDI CC 123. Los Pedales 3 y 4 pueden ser asignados a Bypass y Mute respectivamente.
+
+- HOLD PEDALs: Si se mantiene presionado por mas de 700ms el Pedal 1 este pasa a MODO BANCO, el Pedal 2 pasa a MODO INDIVIDUAL, el Pedal 3 pasa a MODO LOOP/DRUM, el Pedal 4 pasa a MODO TUNER.
+
 - La Pedalera inicia en MODO BANCO en el Banco 0 y Preset 0 (A), sin embargo queda a la espera (LEDs Parpadeando) de la confirmación de selección de preset. Usted debe confirmar el preset antes de pasar el MODO INDIVIDUAL ya que, los LEDs seguirán parpadeando impidiendo el correcto funcionamiento de este MODO. Además, con cada pulsación de los Pedales 1 y 2 los LEDs volverán a Parpadear y, usted deberá necesariamente confirmar el preset.
 
 Simulación:
@@ -83,11 +94,13 @@ La versión simple y económica de este proyecto esta limitada a 4 Bancos (con 4
 Esta Pedalera tiene la característica de recibir la señal MIDI del software y reflejarla en el pedal. Almacena las actualizaciones recibidas tanto en el MODO BANCO como en el MODO INIVIDUAL. Por ejemplo, si usted esta en el MODO BANCO y cambia de presets, la pedalera recibirá las actualizaciones de cada cambio de los pedales individuales (on/off) y los reflejará en los LEDs cuando usted cambie al MODO INDIVIDUAL. De esta forma sabrá el estado de los efectos sin tener que mirar la interfaz gráfica en su Monitor. Advertencia: Si selecciona en el código la opción sin MIDI INPUT, entonces al pasar del Modo Banco al Modo Individual, todos los pedales se apagarán, de esta forma el usuario estará seguro del estado de los pedales, es decir que, la función Banco e Individual no serán compatibles directamente.
 
 # MEDIDAS
+
 Entrar a: https://app.sketchup.com
 
 Abrir el archivo CON EXTENSIÓN ".skp" que se encuentra en la carpeta Miscellanea.
 
 # MATERIALES
+
 Este proyecto pretende usar materiales reciclados, quien escribe no responde por los daños económicos que puedan causar los detalles descriptos en este apartado:
 
 1. Arduino Nano u otra placa programable con Arduino IDE y con disponibilidad de 17 pines digitales: la conexión a la PC se hace por USB, luego usar [ttymidi](https://github.com/fernando-inf/mod-ttymidi) (en GNU/Linux es fácil de compilar) para simular un puerto MIDI (o Hairless MIDI to Serial).
@@ -118,6 +131,7 @@ Este proyecto pretende usar materiales reciclados, quien escribe no responde por
 <img src="https://raw.githubusercontent.com/fernando-inf/ARDUINO-GUITARIX-MIDI_PEDALBOARD/main/ARDUINO-GUITARIX-MIDI_PEDALBOARD/Miscellanea/PedalBoardMIDI-5.png" width="100%"></img> 
 
 # ADVERTENCIAS/ACLARACIONES
+
 - MIDI TRHU: Luego de hacer pruebas exhaustivas se puede decir que: Si usted en Guitarix añadió un efecto, luego le asigno un MIDI CC y luego quito este efecto: es recomendable eliminar el MIDI CC asignado en la pestaña Motor-> Controlador MIDI. Así, se determino que se evita un bucle infinito de entradas y salidas de señales MIDI (si usted no elimina el CC asignado, Guitarix continuará enviando la señal MIDI, repetidas veces) ya que el Código de este PedalBoard habilita MIDI THRU para la correcta actualización de los preset con cada cambio de los mismos. Si se envían señales repetidas de un mismo MIDI CC se produce el bucle infinito (ver: https://github.com/brummer10/guitarix/issues/80).
 
      - Apartir de versiones de GuitarIX [descargadas](https://github.com/brummer10/guitarix) y compiladas luego del 23/09/2021 ya no es necesario habilitar MIDI TRHU en el código: https://github.com/brummer10/guitarix/issues/85 . 
@@ -131,6 +145,7 @@ Este proyecto pretende usar materiales reciclados, quien escribe no responde por
 - Considere usar [Noise Repellent](https://github.com/lucianodato/noise-repellent) como Reductor de Ruido (No es puerta de Ruido), si bien provoca latencia, vale la pena probarlo.
 
 # OTRA INFORMACIÓN
+
 - ASIGNACIÓN DE PINES Y MIDI CC: Abra el archivo ARDUINO-GUITARIX-MIDI_PEDALBOARD.ino con Arduino IDE. En la primer pestaña encontrará los pines asignados a LEDs y Pedales. Todos los Pines y señales MIDI CC son modificables pero, no realice ningún cambio sin antes hacer una copia de los archivos. Puede usar simuladores (SimulIDE) y el Debug de Hairless MIDI to Serial para probar los cambios que realice.
 Ver la simulación en SimulIDE para entender mejor la asignación de Pines:
 
