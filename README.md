@@ -80,7 +80,7 @@ https://github.com/fernando-inf/ARDUINO-GUITARIX-MIDI_PEDALBOARD
 
 - MODO TUNER (Canal MIDI 1): Los LEDs de los pedales muestran el balanceo de las notas, al llegar al LED central la cuerda está afinada (esto sucede cuando el Valor de "Velocity" recibido en la Pedalera esta entre 62 y 64), las notas se muestran en el Display (solo con Display 7 segmentos, LCD u OLED). Al pasar a este Modo, se envía una señal MIDI CC 118 para encender el Afinador (usted deberá asignar este MIDI CC en el programa), al salir del Modo se envía una señal MIDI de apagado. Cuando las cuerdas no son pulsadas la Pedalera deja de mostrar datos en el Display si se recibe un MIDI CC 123. Los Pedales 3 y 4 pueden ser asignados a Bypass y Mute respectivamente.
 
-- HOLD PEDALs: Si se mantiene presionado por mas de 700ms el Pedal 1 este pasa a MODO BANCO, el Pedal 2 pasa a MODO INDIVIDUAL, el Pedal 3 pasa a MODO LOOP/DRUM, el Pedal 4 pasa a MODO TUNER.
+- HOLD PEDALs: Si se mantiene presionado por más de 700ms el Pedal 1, este pasa a MODO BANCO, el Pedal 2 pasa a MODO INDIVIDUAL, el Pedal 3 pasa a MODO LOOP/DRUM, el Pedal 4 pasa a MODO TUNER.
 
 - La Pedalera inicia en MODO BANCO en el Banco 0 y Preset 0 (A), sin embargo queda a la espera (LEDs Parpadeando) de la confirmación de selección de preset. Usted debe confirmar el preset antes de pasar el MODO INDIVIDUAL ya que, los LEDs seguirán parpadeando impidiendo el correcto funcionamiento de este MODO. Además, con cada pulsación de los Pedales 1 y 2 los LEDs volverán a Parpadear y, usted deberá necesariamente confirmar el preset.
 
